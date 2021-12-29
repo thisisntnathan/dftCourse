@@ -17,7 +17,7 @@ permalink: /introduction.html
 
 ### The Short Course
 
-The *Short Course* is designed as a primer for advanced undergraduates and beginning graduate students. It is intended to give the completely inexperienced reader a step-by-step guide to running electronic structure calculations on the AS-CHEM computing cluster at Cornell University, but it is our hope that these instructions are easily generalizable to other computing clusters.  
+The *Short Course* is designed as a primer for advanced undergraduates and beginning graduate students. It is intended to give the completely inexperienced reader a step-by-step guide to running electronic structure calculations on the AS-CHEM computing cluster at Cornell University, but it is our hope that these instructions are easily generalizable to other computing clusters. The Short Course's main computational engine is <kbd>Gaussian16</kbd> since it was originally designed for Collum group members, however a *fully open-source* edition (utilizing [<kbd>Psi4</kbd>](https://psicode.org/)) is currently being written.  
 
 [Software](/dftCourse/ShortCourse/software.html)  
 [Linux basics](/dftCourse/ShortCourse/linuxBasics.html)  
