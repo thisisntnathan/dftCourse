@@ -133,7 +133,7 @@ It is common in large systems to use a smaller set of basis functions to find th
 
 <br />
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/aValues.html">Calculating A-values</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/aValues.html">Calculating A-values</a></center> |
 
 <br>
 

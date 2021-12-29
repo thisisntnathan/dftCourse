@@ -185,7 +185,7 @@ H 18 B20 2 A19 1 D18 0
 
 <br />
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/slurmScripts.html"><kbd>SLURM</kbd> Basics</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/slurmScripts.html"><kbd>SLURM</kbd> Basics</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> |
 
 <br />
 

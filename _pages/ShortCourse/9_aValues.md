@@ -12,7 +12,7 @@ permalink: /ShortCourse/aValues.html
 The [A-value](https://goldbook.iupac.org/terms/view/A00012) of a substituent is the energy of the axial cyclohexane conformer relative to the equatorial conformer (i.e., the *isomerization energy*). In organic conformational analysis the A-value is used as the archetypal steric parameter.  
 
 <center>
-    <img src="/assets/a-value.png" width="396" height="77.9">
+    <img src="/dftCourse/assets/a-value.png" width="396" height="77.9">
 </center>
 
 <br>
@@ -55,9 +55,9 @@ So we get a relative energy of 1.77 kcal mol<sup>-1</sup>, which is in excellent
 
 >These are the kinds of comparisons that underscore much of computational organic chemistry. Even computations of complex mechanistic pathways are reducible to calculations of relative energies.
 
-For more practice, try calculating other A-values and checking them with their [experimental values](https://organicchemistrydata.org/hansreich/resources/fundamentals/?page=a_values/). Then, when you feel like you're ready, give [this problem](/dftCourse/problems/cpDimer.html) a shot.
+For more practice, try calculating other A-values and checking them with their [experimental values](https://organicchemistrydata.org/hansreich/resources/fundamentals/?page=a_values/). Then, when you feel like you're ready, give [this problem](/dftCourse/Problems/cpDimer.html) a shot.
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> |
 
 <br>
 

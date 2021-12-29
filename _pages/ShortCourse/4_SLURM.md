@@ -132,7 +132,7 @@ These are some of the most important commands we'll use in this tutorial. A shor
 
 <br />
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/firstScript.html">My First Script</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/slurmScripts.html">My First <kbd>SLURM</kbd> Job</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/firstScript.html">My First Script</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/slurmScripts.html">My First <kbd>SLURM</kbd> Job</a></center> |
 
 <br />
 

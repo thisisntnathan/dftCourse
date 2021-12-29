@@ -3,7 +3,7 @@ layout: page
 title: <kbd>g16</kbd> routing line templates
 sub-title: Resources
 sidebar_link: True
-permalink: /resources/cheatCodes.html
+permalink: /Resources/cheatCodes.html
 ---
 <!-- markdownlint-disable-file MD040 MD024 -->
 

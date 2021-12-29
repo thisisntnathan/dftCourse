@@ -154,7 +154,7 @@ In the next section, we'll go over how to examine the output file and parse it f
 
 <br />
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/gaussianInputs.html"><kbd>Gaussian</kbd> Input Files</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/gaussianOutputs.html"><kbd>Gaussian</kbd> Output Files</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/gaussianInputs.html"><kbd>Gaussian</kbd> Input Files</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/gaussianOutputs.html"><kbd>Gaussian</kbd> Output Files</a></center> |
 
 <br>
 

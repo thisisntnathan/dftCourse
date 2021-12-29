@@ -145,7 +145,7 @@ In the next section, we'll talk about the final part of our recipe: the Gaussian
 
 <br />
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/gaussianInputs.html">Gaussian Input Files</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/gaussianInputs.html">Gaussian Input Files</a></center> |
 
 <!-- <br /> -->
 

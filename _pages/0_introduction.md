@@ -22,7 +22,7 @@ The *Short Course* is designed as a primer for advanced undergraduates and begin
 [Software](/dftCourse/ShortCourse/software.html)  
 [Linux basics](/dftCourse/ShortCourse/linuxBasics.html)  
 [My first script](/dftCourse/ShortCourse/firstScript.html)  
-[<kbd>SLURM</kbd> basics](/dftCourse/ShortCourse/SLURM.html)  
+[<kbd>SLURM</kbd> basics](/dftCourse/ShortCourse/slurm.html)  
 [My first <kbd>SLURM</kbd> job](/dftCourse/ShortCourse/slurmScripts.html)  
 [The <kbd>Gaussian</kbd> input file](/dftCourse/ShortCourse/gaussianInputs.html)  
 [My first <kbd>Gaussian</kbd> job](/dftCourse/ShortCourse/firstJob.html)  
@@ -55,15 +55,15 @@ Electronic structure theory
 My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry.  [Let me know](mailto:nml64@cornell.edu) if there's anything else you'd like to see here!  
 
 [Cyclohexane A-values (from the Short Course)](/dftCourse/ShortCourse/aValues.html)  
-[The Smelly Dimer Problem](/dftCourse/problems/cpDimer.html)  
+[The Smelly Dimer Problem](/dftCourse/Problems/cpDimer.html)  
 
 ### Resources
 
-[The Code Repo: Exercises and Problems](https://github.com/thisisntnathan/dftShortCourseFiles)  
+[The Code Repo: Exercises and Problems](https://github.com/thisisntnathan/dftCourseCodeRepo)  
 <!-- Best practices   -->
-[g16 “cheat codes” (routing line templates)](/dftCourse/resources/cheatCodes.html)  
+[g16 “cheat codes” (routing line templates)](/dftCourse/Resources/cheatCodes.html)  
 <!-- Common error codes   -->
-[A collection of papers/resources I've amassed over the years.](/dftCourse/resources/links.html)
+[A collection of papers/resources I've amassed over the years.](/dftCourse/Resources/links.html)
 
 ### Further Readings
 

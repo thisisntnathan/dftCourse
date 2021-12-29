@@ -4,7 +4,7 @@ title: The smelly dimer problem
 sub-title: Problems
 sidebar_link: True
 sidebar_sort_order: 1
-permalink: /problems/cpDimer.html
+permalink: /Problems/cpDimer.html
 ---
 <!-- markdownlint-disable-file MD040 -->
 

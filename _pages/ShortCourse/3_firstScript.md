@@ -142,7 +142,7 @@ If you want to read more about the power of scripting I wholely recommend Al Swe
 
 <br />
 
-| <center>Previous<br><a href="/dftCourse/ShortCourse/linuxBasics.html">Linux Basics</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/linuxBasics.html">Linux Basics</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> |
 
 <br />
 
