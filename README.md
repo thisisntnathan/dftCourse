@@ -18,7 +18,7 @@ If you want to contribute to this course (first of all, thank you!), or you have
 
 ## The website
 
-The DFT course website was built using [Hydeout 4.2.0 by Andrew Fong](https://fongandrew.github.io/hydeout/) based on the [original Hyde theme](http://hyde.getpoole.com/) for [Jekyll](http://jekyllrb.com/).
+The DFT course website was built using [Hydeout 4.2.0 by Andrew Fong](https://fongandrew.github.io/hydeout/) based on the [original Hyde theme by Mark Otto](http://hyde.getpoole.com/) for [Jekyll](http://jekyllrb.com/).
 
 ## License
 
