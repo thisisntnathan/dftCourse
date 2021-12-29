@@ -2,7 +2,7 @@
 
 # The DFT course
 
-So your advisor has finally found those [cool](https://doi.org/10.1039/D0CC06085B) [looking](https://www.science.org/doi/10.1126/science.abg0720) [reaction](https://pubs.acs.org/doi/10.1021/acscatal.1c03797) [coordinate](https://pubs.acs.org/doi/10.1021/jacs.1c02193) [diagrams](https://www.sciencedirect.com/science/article/pii/S1010603021000964) and wants you to start checking out this DFT thing so that you can get your next paper into the hallowed halls of *Science* or *Nature*. Well, you're in luck! [This course](thisisntnathan.github.io/dftCourse) should get you started off swimmingly.  
+So your advisor has finally found those [cool](https://doi.org/10.1039/D0CC06085B) [looking](https://www.science.org/doi/10.1126/science.abg0720) [reaction](https://pubs.acs.org/doi/10.1021/acscatal.1c03797) [coordinate](https://pubs.acs.org/doi/10.1021/jacs.1c02193) [diagrams](https://www.sciencedirect.com/science/article/pii/S1010603021000964) and wants you to start checking out this DFT thing so that you can get your next paper into the hallowed halls of *Science* or *Nature*. Well, you're in luck! [This course](https://thisisntnathan.github.io/dftCourse) should get you started off swimmingly.  
 
 This course was designed with Cornell chemistry students as its principle audience. It centers around how to use the AS-CHEM cluster and <kbd>Gaussian</kbd> (<kbd>Psi4</kbd> instruction coming soon!), but we hope that it will be helpful (particularly the Long Course) for those outside Cornell chemistry too.
 
