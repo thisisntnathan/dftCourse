@@ -1,0 +1,28 @@
+<div id="sidebar">
+  <header>
+    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
+      <a href="{{ "/" | relative_url }}">
+        {% unless page.url == "/" %}
+          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
+        {% endunless %}
+        {{ site.title }}
+      </a>
+    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+    <p class="lead">{{ site.description }}</p>
+  </header>
+  
+  {% include sidebar-nav-links.html %}
+
+  {% if site.version %}
+    <span class="site-version">Currently v{{ 1.0 }}</span>
+  {% endif %}
+
+  {% include sidebar-icon-links.html %}
+
+  <span class="site-version">
+    Built from <a href="https://fongandrew.github.io/hydeout/">Hydeout</a> using <a href="http://jekyllrb.com/">Jekyll</a>
+  </span>
+
+  {% include copyright.html %}
+
+</div>

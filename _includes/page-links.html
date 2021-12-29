@@ -1,0 +1,104 @@
+{% comment %}
+  The code below dynamically generates a sidebar nav of pages with
+  `sidebar_link: true` in the front-matter. See readme for usage.
+{% endcomment %}
+
+<details>
+  <summary>
+    The Short Course
+  </summary>
+  <p>
+    {% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
+    {% for node in pages_list %}
+      {% if node.sub-title == "The DFT Short Course" %}
+        {% if node.sidebar_link %}
+          <a class="page-link {% if page.url == node.url %} active{% endif %}"
+              href="{{ node.url | relative_url }}"> 
+              <small>
+                {% if node.short-title != null %}
+                  {{ node.short-title }}
+                {% else %}
+                  {{ node.title }}
+                {% endif %} 
+              </small>
+          </a> <br>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </p>
+</details>
+
+<details>
+  <summary>
+    The Long Course
+  </summary>
+  <p>
+    {% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
+    {% for node in pages_list %}
+      {% if node.sub-title == "The DFT Long Course" %}
+        {% if node.sidebar_link %}
+          <a class="page-link {% if page.url == node.url %} active{% endif %}"
+              href="{{ node.url | relative_url }}">
+              <small>
+                {% if node.short-title != null %}
+                  {{ node.short-title }}
+                {% else %}
+                  {{ node.title }}
+                {% endif %}   
+              </small>
+          </a> <br>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </p>
+</details>
+
+<details>
+  <summary>
+    Problems
+  </summary>
+  <p>
+    {% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
+    {% for node in pages_list %}
+      {% if node.sub-title == "Problems" %}
+        {% if node.sidebar_link %}
+          <a class="page-link {% if page.url == node.url %} active{% endif %}"
+              href="{{ node.url | relative_url }}">
+              <small>
+                {% if node.short-title != null %}
+                  {{ node.short-title }}
+                {% else %}
+                  {{ node.title }}
+                {% endif %} 
+              </small>
+          </a> <br>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </p>
+</details>
+
+<details>
+  <summary>
+    Resources
+  </summary>
+  <p>
+    {% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
+    {% for node in pages_list %}
+      {% if node.sub-title == "Resources" %}
+        {% if node.sidebar_link %}
+          <a class="page-link {% if page.url == node.url %} active{% endif %}"
+              href="{{ node.url | relative_url }}">
+              <small>
+                {% if node.short-title != null %}
+                  {{ node.short-title }}
+                {% else %}
+                  {{ node.title }}
+                {% endif %} 
+              </small>
+          </a> <br>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </p>
+</details>

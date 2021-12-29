@@ -1,0 +1,76 @@
+I"�<center>
+    <h4>Written by Nathan M. Lui (2023) <br />
+    With contributions from Dr. Ryan A. Woltornist (2021), <br />
+    Dr. Kyle Mack (2018), and Dr. Russell F. Algera (2017) </h4>
+</center>
+
+<p><br /></p>
+
+<h3 id="the-short-course">The Short Course</h3>
+
+<p>The <em>Short Course</em> is designed as a primer for advanced undergraduates and beginning graduate students. It is intended to give the completely inexperienced reader a step-by-step guide to running electronic structure calculations on the AS-CHEM computing cluster at Cornell University, but it is our hope that these instructions are easily generalizable to other computing clusters.</p>
+
+<p><a href="/ShortCourse/software.html">Software</a><br />
+<a href="/ShortCourse/linuxBasics.html">Linux basics</a><br />
+<a href="/ShortCourse/firstScript.html">My first script</a><br />
+<a href="/ShortCourse/SLURM.html"><kbd>SLURM</kbd> basics</a><br />
+<a href="/ShortCourse/slurmScripts.html">My first <kbd>SLURM</kbd> job</a><br />
+<a href="/ShortCourse/gaussianInputs.html">The <kbd>Gaussian</kbd> input file</a><br />
+<a href="/ShortCourse/firstJob.html">My first <kbd>Gaussian</kbd> job</a><br />
+<a href="/ShortCourse/gaussianOutputs.html">Understanding the <kbd>Gaussian</kbd> output file</a><br />
+<a href="/ShortCourse/aValues.html">Putting it all together: calculating cyclohexane A-values</a></p>
+
+<h3 id="the-long-course">The Long Course</h3>
+
+<h4 id="the-long-course-is-coming-soon">The Long Course is coming soon!</h4>
+
+<p>The <em>Long Course</em> is a set of more advanced topics in scripting and computational chemistry. It was written for those who have, or would like to, incorporate more advanced calculations/models into their research. The topics start by the computational streamlining workflow (with <kbd>bash</kbd> scripting) and then progress towards the more under-the-hood options of computational engines.</p>
+
+<p>Using <kbd>bash</kbd> to streamline computational workflow and data processing<br />
+Cost efficiency: Selecting basis sets and functionals without going overboard<br />
+Using custom basis sets and pseudopotentials<br />
+The <del>science</del> art of finding transition structures<br />
+Transition structure search using QST methods<br />
+The implicit/explicit solvation war<br />
+Electronic structure theory
+<!-- 
+[(More) advanced job scripting with <kbd>bash</kbd>](/LongCourse/bashScripting.html)  
+[Cost efficiency: Selecting basis sets and functionals without going overboard](/LongCourse/basisSets.html)  
+[Transition structure search using QST methods](/LongCourse/QST.html)  
+[The implicit/explicit solvation war](/LongCourse/solvationModels.html)  
+[Electronic structure theory](/Tutorials/CompChem/9_introToEST.html)   
+--></p>
+
+<h3 id="problems">Problems</h3>
+
+<p>My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry.</p>
+<center>
+    <a href="mailto:nml64@cornell.edu">Let me know</a> if there's anything else you'd like to see here!
+</center>
+
+<h5 id="let-me-know">Let me know</h5>
+
+<p><a href="/ShortCourse/aValues.html">Cyclohexane A-values (from the Short Course)</a><br />
+<a href="/problems/cpDimer.html">The Smelly Dimer Problem</a></p>
+
+<h3 id="resources">Resources</h3>
+
+<p><a href="https://github.com/thisisntnathan/dftShortCourseFiles">The Code Repo: Exercises and Problems</a><br />
+<!-- Best practices   -->
+<a href="/resources/cheatCodes.html">g16 “cheat codes” (routing line templates)</a><br />
+<!-- Common error codes   -->
+<a href="/resources/links.html">A collection of papers/resources I’ve amassed over the years.</a></p>
+
+<h3 id="further-readings">Further Readings</h3>
+
+<p>The <em>International Journal of Quantum Chemistry</em> has published an <a href="https://onlinelibrary.wiley.com/journal/1097461x">excellent series of tutorial reviews</a> for novices and professionals alike. I highly recommend looking through them. Below are a few you may find particularly helpful.</p>
+
+<p>Fourteen Easy Lessons in Density Functional Theory<br />
+by John P. Perdew and Adrienn Ruzsinszky<br />
+<a href="https://doi.org/10.1002/qua.22829"><em>Int. J. Quantum Chem.</em> <strong>2012</strong>, <em>110</em> (15), 2801</a><br />
+DFT in a nutshell<br />
+by Kieron Burke and Lucas O. Wagner<br />
+<a href="https://doi.org/10.1002/qua.24259"><em>Int. J. Quantum Chem.</em> <strong>2013</strong>, 113 (2), 96</a><br />
+The devil in the details: A tutorial review on some undervalued aspects of density functional theory calculations by Pierpaolo Morgante and Roberto Peverati<br />
+<a href="https://doi.org/10.1002/qua.26332"><em>Int. J. Quantum Chem.</em> <strong>2020</strong>, <em>120</em> (18), e26332</a></p>
+:ET

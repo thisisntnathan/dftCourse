@@ -1,0 +1,145 @@
+I"�*<p>Let’s write a script in <kbd>bash</kbd>! We’ll do this using the command line (with <kbd>vim</kbd>), but feel free to use any text editor.</p>
+
+<p>Navigate to your home directory and open a new file named <code class="language-plaintext highlighter-rouge">hello.sh</code>.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span>vim hello.sh
+</code></pre></div></div>
+
+<p>In <code class="language-plaintext highlighter-rouge">vim</code>, type <code class="language-plaintext highlighter-rouge">i</code> to enter insert mode and type:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"Hello world!"</span>
+</code></pre></div></div>
+
+<p>The first line is called the <em>shebang</em> (a portmanteau of ha<strong>sh</strong> (#) and <strong>bang</strong> (!)).<sup>1</sup> It tells the operating system where to find the <em>interpreter</em> for the program. In this case we are telling the OS that this script can be read and run by <kbd>bash</kbd> which is located at <code class="language-plaintext highlighter-rouge">/bin/bash</code>. Many different interpreters can be used as an alternative to <kbd>bash</kbd>, for example <code class="language-plaintext highlighter-rouge">#!/bin/python2.7</code> tells the OS that this script is written in <kbd>python</kbd> and it should be run using an old version of python (2.7) located at <code class="language-plaintext highlighter-rouge">/bin/python2.7</code>.</p>
+
+<blockquote>
+  <p>Recall that <kbd>bash</kbd> is both the shell and the scripting language, so <kbd>bash</kbd> commands we give, also known as the syntax, in the script are executed by the interpreting program <code class="language-plaintext highlighter-rouge">/bin/bash</code>.</p>
+</blockquote>
+
+<h4 id="comments">Comments</h4>
+
+<p>The interpreter doesn’t treat this line as a program call since it starts with <code class="language-plaintext highlighter-rouge">#</code>, the <kbd>bash</kbd> comment symbol. Any text in a <kbd>bash</kbd> script that is preceded with a <code class="language-plaintext highlighter-rouge">#</code> will be ignored by the interpreter. Note that <a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">different languages have different comment symbols/types</a> (e.g. <code class="language-plaintext highlighter-rouge">(* OCaml *)</code>, <code class="language-plaintext highlighter-rouge">% MATLAB</code>, <code class="language-plaintext highlighter-rouge">// Java</code>, <code class="language-plaintext highlighter-rouge">&lt;!-- HTML --&gt;</code>, etc…). Comments within your code serve two purposes:<br />
+<!-- markdownlint-disable-next-line MD032--> 1) when <strong>other people</strong> read your code they understand your thinking and how you chose to implement the program, and<br />
+<!-- markdownlint-disable-next-line MD032--> 2) when <strong>you</strong> read your code, months or years later, <strong>you</strong> understand your thinking and how you chose to implement the program</p>
+
+<blockquote>
+  <p>Comment wide and comment often, but don’t comment the obvious!</p>
+</blockquote>
+
+<p>Now back to our script, press <code class="language-plaintext highlighter-rouge">esc</code> to back out of insert mode and type <code class="language-plaintext highlighter-rouge">:wq</code> to <strong>w</strong>rite the file and <strong>q</strong>uit <kbd>vim</kbd>.  If you’re doing this in a graphical text editor save the file to the home directory with the name <code class="language-plaintext highlighter-rouge">hello.sh</code>.</p>
+
+<p>Now let’s look for our new file in the home directory:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span><span class="nb">ls
+</span>launchCodes.txt          playGame.sh          Presentation Slides
+hello.sh
+</code></pre></div></div>
+
+<p>There it is! So lets run it with the command <code class="language-plaintext highlighter-rouge">bash hello.sh</code>.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span>bash hello.sh
+The <span class="nb">command </span>was not found or was not executable
+</code></pre></div></div>
+
+<p>That’s not good!  We’re sure the file exists, so it must be our access modes.  Let’s check:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span>
+<span class="nt">-rw-r--r--</span>   1 NathanLui  Users    33B Dec 21 13:21 hello.sh
+</code></pre></div></div>
+
+<p>There’s the issue, not a problem since it’s one we already know how to fix.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span><span class="nb">chmod</span> +x hello.sh             <span class="c"># n.b. the +x gives x </span>
+NathanLui@local | ~ <span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span>                         <span class="c"># permision to everyone</span>
+<span class="nt">-rwxr-xr-x</span>   1 NathanLui  Users    33B Dec 21 13:21 hello.sh
+</code></pre></div></div>
+
+<p>Now our program should run without a hitch.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span>bash hello.sh
+Hello world!
+</code></pre></div></div>
+
+<h2 id="--you-did-it--"><center> 👏👏 You did it! 👏👏 </center></h2>
+
+<!-- <br /> -->
+
+<p>Lets try something a bit more difficult. Open that script back up with <code class="language-plaintext highlighter-rouge">vim hello.sh</code>, add a variable called <code class="language-plaintext highlighter-rouge">food</code> and give it a value (like your favorite food):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"Hello world!"</span>
+<span class="nv">food</span><span class="o">=</span><span class="s2">"pizza"</span>
+</code></pre></div></div>
+
+<p>Now let’s call that variable with:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"My favorite food is </span><span class="nv">$food</span><span class="s2">."</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">$</code> tells the interpreter that we want the object stored in the variable <code class="language-plaintext highlighter-rouge">food</code>. Our full script now looks like:</p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/38262bc95d709f20d66237671b94f861.js"> </script>
+
+<p>When we run it, the script now prints:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span>bash hello.sh             <span class="c"># no need to change permissions</span>
+Hello world!                                    <span class="c"># this time since we did it</span>
+My favorite food is pizza.                      <span class="c"># for this file earlier</span>
+</code></pre></div></div>
+
+<p>Look at you go! One last thing that we should talk about is an environmental variable. An environmental variable is one whose value is set outside the program. Let’s edit our script one more time. Append the line:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"I am </span><span class="nv">$age</span><span class="s2"> years old."</span>
+</code></pre></div></div>
+
+<p>So our script is now:</p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/da145ae701a9f05e007bb6071843d418.js"> </script>
+
+<p>But we haven’t declared the <code class="language-plaintext highlighter-rouge">age</code> variable yet. In some languages this would throw an error, but if we run our program we see:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span>bash hello.sh
+Hello world!
+My favorite food is pizza.
+I am  years old.
+</code></pre></div></div>
+
+<p>This is because <kbd>bash</kbd> automatically initializes uninitialized variables to <code class="language-plaintext highlighter-rouge">null</code> at first use. So how do we get the script to print our age? We can initialize <code class="language-plaintext highlighter-rouge">age</code> as an environmental variable and export it to our script. We can do this in one step using <code class="language-plaintext highlighter-rouge">export</code>.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NathanLui@local | ~ <span class="nv">$ </span><span class="nb">export </span><span class="nv">age</span><span class="o">=</span>26
+NathanLui@local | ~ <span class="nv">$ </span>bash hello.sh
+Hello world!
+My favorite food is pizza.
+I am 26 years old.
+</code></pre></div></div>
+
+<p>You might be wondering why would ever need to do this. Often times we’ll be working with programs that can’t be easily modified, or we’ll want to set variables once instead of every single time we run the program. These tasks can be easily accomplished using environmental variables.</p>
+
+<p>Scripting is useful for more than telling the world your favorite food and how old you are. Its our primary way of sending instructions to the cluster. When we submit jobs to the CHEM cluster’s resource manager <kbd>SLURM</kbd> we do so in the form of shell scripts. More on that in the next chapter.</p>
+
+<p>If you want to read more about the power of scripting I wholely recommend Al Sweigart’s book <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>, a fantastic (and free) resource for budding programmers (and busy grad students).<sup>2</sup></p>
+
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><center>Previous<br /><a href="/ShortCourse/linuxBasics.html">Linux Basics</a></center></td>
+      <td><center><a href="/Introduction.html">Home</a></center></td>
+      <td><center>Next<br /><a href="/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="references">References</h4>
+
+<p>(1) <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">Shebang (Unix)</a><br />
+(2) <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></p>
+:ET

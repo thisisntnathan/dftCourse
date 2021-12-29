@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Setup
+title:            The DFT Course
+tagline:          'Tagline'
+description:      'By Nathan M. Lui'
+#url:              https://fongandrew.github.io
+#baseurl:          '/hydeout'
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
+
+author:
+  name:           'Nathan M. Lui'
+#  url:            https://twitter.com/fongandrewc
+
+plugins:
+  - jekyll-gist
+
+# Sidebar link settings
+sidebar_home_link:  False
+
+include:
+    - _pages
+
+google_analytics:   297908426

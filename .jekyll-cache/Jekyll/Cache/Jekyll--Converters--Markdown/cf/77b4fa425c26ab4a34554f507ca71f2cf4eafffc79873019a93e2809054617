@@ -1,0 +1,70 @@
+I"�<!-- markdownlint-disable-file MD040 MD024 -->
+
+<p>This section provides general templates for the most common Gaussian jobs. In all cases a split basis set has been utilized to reduce computational costs as our group typically works on relatively large systems. In the following “Basis Set (HL/LL)” refer to the high- and low-level basis sets, respectively. If your systems are small enough or computational resources are considerable enough to treat the entirety of the system with a single basis set then that approach is preferable. As we’ve covered already, a final single point energy calculation is redundant in this case.</p>
+
+<blockquote>
+  <p>N.b. SCF energies computed using two different basis sets are incomparable.</p>
+</blockquote>
+
+<h2 id="ground-state-geometry-optimizationsenergy-calculations">Ground State Geometry Optimizations/Energy Calculations</h2>
+
+<h3 id="step-1-optimize-a-ground-state-geometry">Step 1: Optimize a ground state geometry</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (LL) OPT=gediis FREQ=NoRaman 
+temperature=Temperature Integral(Grid=UltraFine)
+</code></pre></div></div>
+
+<h3 id="step-2-calculate-ground-state-single-point-energy">Step 2: Calculate ground state single point energy</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (HL) SP Integral(Grid=UltraFine)
+</code></pre></div></div>
+
+<h2 id="transition-state-optimizationsenergy-calculations">Transition State Optimizations/Energy Calculations</h2>
+
+<h3 id="step-1--optimization-around-the-active-atoms">Step 1:  Optimization around the active atoms</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (LL) OPT=(TS,gediis,EstmFC,ModRedundant,NoEigentest) 
+Geom=Connectivity  
+</code></pre></div></div>
+
+<p>Then, at the end of the input file, add:<br />
+B [Atom 1 number] [Atom 2 number] F<br />
+Where atoms 1 and 2 will be frozen in the geometry optimization<br />
+e.g. `B 74 94 F — Note: there are spaces between each parameter and the next.</p>
+
+<h4 id="if-optimizing-using-generalized-internal-coordinates-gic">If optimizing using Generalized Internal Coordinates (GIC)</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (LL) OPT=(TS,gediis,EstmFC,AddGIC,NoEigentest) 
+Geom=Connectivity
+</code></pre></div></div>
+
+<p>Then, at the end of the preview, add:<br />
+CoordinateName(freeze)=R(Atom 1 number,atom 2 number)<br />
+Where atoms 1 and 2 will be frozen in the geometry optimization<br />
+e.g. <code class="language-plaintext highlighter-rouge">BrC(freeze)=R(54,46)</code></p>
+
+<h3 id="step-2-geometry-optimization-of-the-active-atoms">Step 2: Geometry optimization of the active atoms</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (LL) OPT=(TS,gediis,CalcFC,NoEigentest) 
+freq=NoRaman temperature=Temperature Geom=Connectivity Integral(Grid=UltraFine)
+</code></pre></div></div>
+
+<h4 id="if-optimizing-using-generalized-internal-coordinates-gic-1">If optimizing using Generalized Internal Coordinates (GIC)</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (LL) OPT=(TS,gediis,CalcFC,GIC,NoEigentest) 
+freq=NoRaman temperature=Temperature Geom=Connectivity Integral(Grid=UltraFine)
+</code></pre></div></div>
+
+<h3 id="step-3-calculation-of-single-point-transition-state-energies">Step 3: Calculation of single point transition state energies</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (HL) SP Integral(Grid=UltraFine)
+</code></pre></div></div>
+
+<h2 id="qst-transition-state-optimizationsenergy-calculations">QST Transition State Optimizations/Energy Calculations</h2>
+
+<h3 id="step-1-optimize-ground-state-geometries-for-reactant-ensemble-and-product-ensemble">Step 1: Optimize ground state geometries for reactant ensemble and product ensemble</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#N Level of Theory/Basis Set (LL) OPT=gediis FREQ=NoRaman 
+temperature=Temperature Integral(Grid=UltraFine)
+</code></pre></div></div>
+:ET

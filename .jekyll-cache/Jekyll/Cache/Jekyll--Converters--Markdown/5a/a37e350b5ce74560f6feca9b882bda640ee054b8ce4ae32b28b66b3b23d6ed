@@ -1,0 +1,12 @@
+I"m<p>The programs engaged in this document were chosen as favorites (or in some cases, relics) of Collum group members.  There is a large emphasis on those that are open source and free to use (<strong>listed in bold below</strong>), however there are a plethora of alternatives available across the internet and the following list should be taken as a starting point, not a superlative.</p>
+
+<h3 id="youll-need-the-following-programs-for-this-tutuorial">You’ll need the following programs for this tutuorial:</h3>
+
+<p>SFTP client (e.g. <strong>FileZilla</strong>, <strong>putty</strong>)<br />
+Molecular modeling program (e.g. GaussView, <strong>Avogadro</strong>, SAMSON, etc…)<br />
+Command line terminal (e.g. the built in <strong>terminal</strong> on Linux/Mac OS or <strong>cygwin</strong> if you’re using a Windows machine)<br />
+A text editor (e.g. <strong>Brackets</strong>, <strong>Sublime</strong>, <strong>VSCode</strong>, <strong>Vim</strong>, <strong>Notepad++</strong>, etc…)<br />
+3D-rendering/ray-tracing software, optional (e.g. <strong>CYLView</strong>, SAMSON, etc)</p>
+
+<h4 id="some-stuff">Some stuff</h4>
+:ET
