@@ -3,7 +3,7 @@ layout: page
 title: A gentle introduction to computational chemistry and density functional theory
 sub-title: The DFT Short Course
 sidebar_link: false
-permalink: /dftShortCourse/introduction.html
+permalink: /introduction.html
 ---
 <!-- markdownlint-disable-file MD026 -->
 
