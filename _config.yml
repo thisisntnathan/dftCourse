@@ -7,7 +7,7 @@ title:            The DFT Course
 tagline:          'Tagline'
 description:      'By Nathan M. Lui'
 url:              https://thisisntnathan.github.io/dftCourse
-# baseurl:          '/dftCourse'
+baseurl:          '/dftCourse'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
