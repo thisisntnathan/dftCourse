@@ -17,7 +17,7 @@ The [A-value](https://goldbook.iupac.org/terms/view/A00012) of a substituent is 
 
 <br>
 
-In [our last exercise](/ShortCourse/firstJob.html) we calculated the energy of equatorial methylcyclohexane:
+In [our last exercise](/dftCourse/ShortCourse/firstJob.html) we calculated the energy of equatorial methylcyclohexane:
 
 ```
 eqMeCyhex:
@@ -29,7 +29,7 @@ Sum of electronic and thermal Free Energies     =     -274.669748 Eh
 ```
 
 Let's see if you can do the same with the axial conformer. Take a quick break and see if you can set up and execute this calculation on your own.  
-If you're just following along or get stuck feel free to grab the files from the [code repo](https://github.com/thisisntnathan/dftShortCourseFiles).  
+If you're just following along or get stuck feel free to grab the files from the [code repo](https://github.com/thisisntnathan/dftCourseCodeRepo).  
 
 ```
 axMeCyhex:
@@ -55,9 +55,9 @@ So we get a relative energy of 1.77 kcal mol<sup>-1</sup>, which is in excellent
 
 >These are the kinds of comparisons that underscore much of computational organic chemistry. Even computations of complex mechanistic pathways are reducible to calculations of relative energies.
 
-For more practice, try calculating other A-values and checking them with their [experimental values](https://organicchemistrydata.org/hansreich/resources/fundamentals/?page=a_values/). Then, when you feel like you're ready, give [this problem](/problems/cpDimer.html) a shot.
+For more practice, try calculating other A-values and checking them with their [experimental values](https://organicchemistrydata.org/hansreich/resources/fundamentals/?page=a_values/). Then, when you feel like you're ready, give [this problem](/dftCourse/problems/cpDimer.html) a shot.
 
-| <center>Previous<br><a href="/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> | <center><a href="/Introduction.html">Home</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/firstJob.html">My First <kbd>Gaussian</kbd> Job</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> |
 
 <br>
 

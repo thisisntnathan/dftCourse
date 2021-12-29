@@ -129,7 +129,7 @@ Go to the next lesson to write your own script!
 
 <br />
 
-| <center>Previous<br><a href="/ShortCourse/software.html">Software</a></center> | <center><a href="/introduction.html">Home</a></center> | <center>Next<br><a href="/ShortCourse/firstScript.html">My First Script</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/software.html">Software</a></center> | <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/firstScript.html">My First Script</a></center> |
 
 <br />
 

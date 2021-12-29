@@ -63,7 +63,7 @@ There's the issue, not a problem since it's one we already know how to fix.
 
 ```sh
 NathanLui@local | ~ $ chmod +x hello.sh             # n.b. the +x gives x 
-NathanLui@local | ~ $ ls -l                         # permision to everyone
+NathanLui@local | ~ $ ls -l                         # permission to everyone
 -rwxr-xr-x   1 NathanLui  Users    33B Dec 21 13:21 hello.sh
 ```
 
@@ -142,7 +142,7 @@ If you want to read more about the power of scripting I wholely recommend Al Swe
 
 <br />
 
-| <center>Previous<br><a href="/ShortCourse/linuxBasics.html">Linux Basics</a></center> | <center><a href="/Introduction.html">Home</a></center> | <center>Next<br><a href="/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/linuxBasics.html">Linux Basics</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> |
 
 <br />
 

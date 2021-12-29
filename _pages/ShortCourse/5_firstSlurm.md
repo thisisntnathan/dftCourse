@@ -36,7 +36,7 @@ echo 'Ending job'
 
 {% gist 7549164222e23dfe9c157e2679bca17f %}
 
-Save this file in its own folder with a descriptive name like `myFirstSlurmJob`. Place the script `hello.sh` from [the first exercise](/ShortCourse/firstScript.html) into this folder too. Now, in order to run this job you need to be on a system that is managed by <kbd>SLURM</kbd>. So let's log on to the AS-CHEM cluster.  
+Save this file in its own folder with a descriptive name like `myFirstSlurmJob`. Place the script `hello.sh` from [the first exercise](/dftCourse/ShortCourse/firstScript.html) into this folder too. Now, in order to run this job you need to be on a system that is managed by <kbd>SLURM</kbd>. So let's log on to the AS-CHEM cluster.  
 
 >You'll need to be connected to the Cornell VPN to access the cluster. If you are a Cornell chemistry student and don't have access to the cluster go see ChemIT (or your group IT representative) to set up your cluster account. If you are not a Cornell chemistry student you'll need to follow your institution's cluster login instructions. Depending on how your cluster is set up some of the instructions below may not work, when in doubt contact your system administrator.
 
@@ -50,10 +50,10 @@ Last login: Sun Dec 26 14:04:09 2021 from <IP address>
 nml64@as-chm-cluster | ~ $ 
 ```
 
-See how the terminal prompt has now changed from `NathanLui@local` to `nml64@as-chm-cluster` to indicate that I'm now working on the cluster. We can navigate the cluster with the same commands we learned [earlier](/ShortCourse/linuxBasics.html). To test our script we'll need to use our SFTP client (FileZilla) to transfer our scripts to the cluster. If you haven't yet, go set up FileZilla using the directions in [section 1](/ShortCourse/software.html). Once you've done that, open FileZilla and connect to the `AS-CHEM` cluster. Drag your whole `myFirstSlurmJob` folder into the cluster pane to transfer it.  
+See how the terminal prompt has now changed from `NathanLui@local` to `nml64@as-chm-cluster` to indicate that I'm now working on the cluster. We can navigate the cluster with the same commands we learned [earlier](/dftCourse/ShortCourse/linuxBasics.html). To test our script we'll need to use our SFTP client (FileZilla) to transfer our scripts to the cluster. If you haven't yet, go set up FileZilla using the directions in [section 1](/dftCourse/ShortCourse/software.html). Once you've done that, open FileZilla and connect to the `AS-CHEM` cluster. Drag your whole `myFirstSlurmJob` folder into the cluster pane to transfer it.  
 
 <center>
-    <img src="/assets/5_1.png" width="641.5" height="462.5">
+    <img src="/dftCourse/assets/5_1.png" width="641.5" height="462.5">
 </center>
 
 >Of course, you have the option to create a new folder on the cluster directly using `mkdir` and then drag the individual shell scripts into that file, but as your experience grows as will the number of files you'll have to keep track of. It will be much more manageable if the organization of your local system mirrors that of the cluster. Transferring whole directories ensures that paths will remain the same. For more, see [best practices]().  
@@ -145,7 +145,7 @@ In the next section, we'll talk about the final part of our recipe: the Gaussian
 
 <br />
 
-| <center>Previous<br><a href="/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> | <center><a href="/Introduction.html">Home</a></center> | <center>Next<br><a href="/ShortCourse/gaussianInputs.html">Gaussian Input Files</a></center> |
+| <center>Previous<br><a href="/dftCourse/ShortCourse/slurm.html"><kbd>SLURM</kbd> Basics</a></center> | <center><a href="/dftCourse/Introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/gaussianInputs.html">Gaussian Input Files</a></center> |
 
 <!-- <br /> -->
 

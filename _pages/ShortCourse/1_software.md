@@ -89,6 +89,6 @@ Due to licensing constraints you'll need to visit [ChemIT](https://it.chem.corne
 
 <br />
 
-| <center><a href="/introduction.html">Home</a></center> | <center>Next<br><a href="/ShortCourse/linuxBasics.html">Linux Basics</a></center> |
+| <center><a href="/dftCourse/introduction.html">Home</a></center> | <center>Next<br><a href="/dftCourse/ShortCourse/linuxBasics.html">Linux Basics</a></center> |
 
 <br />
