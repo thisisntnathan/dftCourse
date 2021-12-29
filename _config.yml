@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            The DFT Course
 tagline:          'Tagline'
 description:      'By Nathan M. Lui'
-url:              https://thisisntnathan.github.io/dftCourse
+url:              https://thisisntnathan.github.io/
 baseurl:          '/dftCourse'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
