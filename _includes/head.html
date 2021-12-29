@@ -16,6 +16,16 @@
 
   {% include google-analytics.html %}
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP4CDFBE6X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZP4CDFBE6X');
+  </script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
   {% include font-includes.html %}
