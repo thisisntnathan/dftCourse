@@ -36,11 +36,11 @@ These setup instructions are for the AS-CHEM cluster only, if you're not trying 
 2. Start FileZilla and open the site manager by going to File > Site Manager.  
 3. Add a new connection by clicking "New Site"
     <center>
-        <img src="/assets/1_1.png" width="634.2" height="280.2">
+        <img src="/dftCourse/assets/1_1.png" width="634.2" height="280.2">
     </center>  
 4. Configure the settings for the new site as shown:
     <center>
-        <img src="/assets/1_2.png" width="634.2" height="280.2">
+        <img src="/dftCourse/assets/1_2.png" width="634.2" height="280.2">
     </center>
     - Protocol: `SFTP - SSH File Transfer Protocol`
     - Host: `cluster2020.chem.cornell.edu`
@@ -50,7 +50,7 @@ These setup instructions are for the AS-CHEM cluster only, if you're not trying 
 5. Click `Connect` to connect to the cluster and make sure you have everything set up correctly. Your cluster home directory should show up on the right.
 
 <center>
-    <img src="/assets/1_3.png" width="641.5" height="462.5">
+    <img src="/dftCourse/assets/1_3.png" width="641.5" height="462.5">
 </center>
 
 To reconnect in the future just go back to the site manager, select the cluster site and click `Connect`. Remember that you need to be connected to the Cornell VPN to access the cluster.
