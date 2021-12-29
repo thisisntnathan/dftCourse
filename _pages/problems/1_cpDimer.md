@@ -23,7 +23,7 @@ Your PI Prof. Batman and his lab manager Dr. Robin ask if you could use your new
 See if you can do this one yourself!  
 Check your work with the solution in the [code repo](https://github.com/thisisntnathan/dftShortCourseFiles) or literature values.<sup>2,3,4</sup>
 
-| <center><a href="/dftCourse/Introduction.html">Home</a></center> |
+| <center><a href="/dftCourse/introduction.html">Home</a></center> |
 
 <br>
 
