@@ -19,15 +19,15 @@ permalink: /introduction.html
 
 The *Short Course* is designed as a primer for advanced undergraduates and beginning graduate students. It is intended to give the completely inexperienced reader a step-by-step guide to running electronic structure calculations on the AS-CHEM computing cluster at Cornell University, but it is our hope that these instructions are easily generalizable to other computing clusters.  
 
-[Software](/ShortCourse/software.html)  
-[Linux basics](/ShortCourse/linuxBasics.html)  
-[My first script](/ShortCourse/firstScript.html)  
-[<kbd>SLURM</kbd> basics](/ShortCourse/SLURM.html)  
-[My first <kbd>SLURM</kbd> job](/ShortCourse/slurmScripts.html)  
-[The <kbd>Gaussian</kbd> input file](/ShortCourse/gaussianInputs.html)  
-[My first <kbd>Gaussian</kbd> job](/ShortCourse/firstJob.html)  
-[Understanding the <kbd>Gaussian</kbd> output file](/ShortCourse/gaussianOutputs.html)  
-[Putting it all together: calculating cyclohexane A-values](/ShortCourse/aValues.html)  
+[Software](/dftCourse/ShortCourse/software.html)  
+[Linux basics](/dftCourse/ShortCourse/linuxBasics.html)  
+[My first script](/dftCourse/ShortCourse/firstScript.html)  
+[<kbd>SLURM</kbd> basics](/dftCourse/ShortCourse/SLURM.html)  
+[My first <kbd>SLURM</kbd> job](/dftCourse/ShortCourse/slurmScripts.html)  
+[The <kbd>Gaussian</kbd> input file](/dftCourse/ShortCourse/gaussianInputs.html)  
+[My first <kbd>Gaussian</kbd> job](/dftCourse/ShortCourse/firstJob.html)  
+[Understanding the <kbd>Gaussian</kbd> output file](/dftCourse/ShortCourse/gaussianOutputs.html)  
+[Putting it all together: calculating cyclohexane A-values](/dftCourse/ShortCourse/aValues.html)  
 
 ### The Long Course
 
@@ -43,27 +43,27 @@ Transition structure search using QST methods
 The implicit/explicit solvation war  
 Electronic structure theory
 <!-- 
-[(More) advanced job scripting with <kbd>bash</kbd>](/LongCourse/bashScripting.html)  
-[Cost efficiency: Selecting basis sets and functionals without going overboard](/LongCourse/basisSets.html)  
-[Transition structure search using QST methods](/LongCourse/QST.html)  
-[The implicit/explicit solvation war](/LongCourse/solvationModels.html)  
-[Electronic structure theory](/Tutorials/CompChem/9_introToEST.html)   
+[(More) advanced job scripting with <kbd>bash</kbd>](/dftCourse/LongCourse/bashScripting.html)  
+[Cost efficiency: Selecting basis sets and functionals without going overboard](/dftCourse/LongCourse/basisSets.html)  
+[Transition structure search using QST methods](/dftCourse/LongCourse/QST.html)  
+[The implicit/explicit solvation war](/dftCourse/LongCourse/solvationModels.html)  
+[Electronic structure theory](/dftCourse/Tutorials/CompChem/9_introToEST.html)   
 -->
 
 ### Problems
 
 My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry.  [Let me know](mailto:nml64@cornell.edu) if there's anything else you'd like to see here!  
 
-[Cyclohexane A-values (from the Short Course)](/ShortCourse/aValues.html)  
-[The Smelly Dimer Problem](/problems/cpDimer.html)  
+[Cyclohexane A-values (from the Short Course)](/dftCourse/ShortCourse/aValues.html)  
+[The Smelly Dimer Problem](/dftCourse/problems/cpDimer.html)  
 
 ### Resources
 
 [The Code Repo: Exercises and Problems](https://github.com/thisisntnathan/dftShortCourseFiles)  
 <!-- Best practices   -->
-[g16 “cheat codes” (routing line templates)](/resources/cheatCodes.html)  
+[g16 “cheat codes” (routing line templates)](/dftCourse/resources/cheatCodes.html)  
 <!-- Common error codes   -->
-[A collection of papers/resources I've amassed over the years.](/resources/links.html)
+[A collection of papers/resources I've amassed over the years.](/dftCourse/resources/links.html)
 
 ### Further Readings
 
