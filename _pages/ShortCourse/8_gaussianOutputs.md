@@ -74,7 +74,9 @@ Next, we'll calculate the energy for our optimized structure. At this point, I *
 ```
 <!-- markdownlint-enable MD040 -->
 
-By default, <kbd>Gaussian</kbd> reports energies in Hartree atomic units:  
+>With most *ab initio* methods absolute energies of molecular systems are calculated relative to free electrons and nuclei which is why they are large and negative.
+
+By default, <kbd>Gaussian</kbd> reports energies in Hartree atomic units (E<sub>h</sub> or A.U.):  
 <center>
     <math>
         1 E<sub>H</sub> =  ħ<sup>2</sup> / m<sub>e</sub>ɑ<sub>0</sub><sup>2</sup> ≈ 627.5 kcal mol<sup>-1</sup>
