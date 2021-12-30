@@ -9,7 +9,7 @@ permalink: /introduction.html
 
 <center>
     <h4>Written by Nathan M. Lui (2023) <br>
-    With contributions from Dr. Ryan A. Woltornist (2021), <br>
+    With contributions from Dr. Ryan A. Woltornist (2021) <br>
     and many others; see the full list of contributors in the <a href='https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute'>GitHub repo</a></h4>
 </center>
 
