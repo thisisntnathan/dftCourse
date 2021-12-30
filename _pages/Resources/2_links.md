@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A collection of papers/webpages/blogs/lecture slides/etc... that I've amassed over the years
+title: A collection of papers/webpages/ blogs/lecture slides/etc... that I've amassed over the years (in no particular order)
 short-title: Links
 sub-title: Resources
 sidebar_link: true
@@ -16,13 +16,16 @@ permalink: /Resources/links.html
 
 Seminar slides from Mikael Johansson of the University of Helsinki on [wave function methods](https://events.prace-ri.eu/event/674/attachments/618/902/QC-lectures.pdf) and [DFT](https://events.prace-ri.eu/event/674/attachments/618/903/DFT-lectures.pdf)  
 
-[Thirty years of density functional theory in computational chemistry: an overview and extensive assessment of 200 density functionals by Narbe Mardirossian and Martin Head-Gordon](https://doi.org/10.1080/00268976.2017.1333644)  
+[Thirty years of density functional theory in computational chemistry: an overview and extensive assessment of 200 density functionals by Narbe Mardirossian and Martin Head-Gordon [*Molecular Physics*, **2017**, *115* (19), 2315](https://doi.org/10.1080/00268976.2017.1333644)  
 This review provides a comprehensive benchmarking of over 200 DFT functionals over several datasets representing different computational datatypes.  
 
-Discussion on the necessity of diffuse basis functions  
+Is the Use of Diffuse Functions Essential for the Properly Description of Noncovalent Interactions Involving Anions? by Antonio Bauzá, David Quiñonero, Pere M. Deyà, and Antonio Frontera
 [*J. Phys. Chem. A* **2013**, *117* (12), 2651](https://pubs.acs.org/doi/10.1021/jp312755z)  
+Discussion on the necessity of diffuse basis functions in anionic calcualtions
 
 [Common Gaussian error messages](https://docs.computecanada.ca/wiki/Gaussian_error_messages)  
 
 [The blog of Dr. Joaquin Barroso-Flores at Instituto de Química, UNAM, Mexico](https://joaquinbarroso.com/)  
 Incredibly helpful for general troubleshooting  
+
+[Group meeting slides from Steven McKerrall (Baran Lab, TSRI, CA, USA)](https://www.scripps.edu/baran/images/grpmtgpdf/McKerrall_Feb_14.pdf)  
