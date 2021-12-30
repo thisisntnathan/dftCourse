@@ -78,7 +78,7 @@ Next, we'll calculate the energy for our optimized structure. At this point, I *
 
 By default, <kbd>Gaussian</kbd> reports energies in Hartree atomic units ($E_h$ or A.U.):  
 <center>
-    $ 1~E_h = \frac{\hbar^2}{m_e~a_0^2} \approx 627.5 ~ \textrm{kcal mol^{-1}} $  
+    $ 1~E_h = \frac{\hbar^2}{m_e~a_0^2} \approx 627.5 ~ \textrm{kcal mol}^{-1} $  
 </center>
 
 The values we're interested in are:
