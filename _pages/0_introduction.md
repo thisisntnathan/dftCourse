@@ -56,6 +56,7 @@ My least favorite math teacher would always say that the only way to learn calcu
 
 [Cyclohexane A-values (from the Short Course)](/dftCourse/ShortCourse/aValues.html)  
 [The Smelly Dimer Problem](/dftCourse/Problems/cpDimer.html)  
+[E-Z isomers of 3-(4-nitrophenyl)but-2-en-2-yl triflate](/dftCourse/Problems/ezIsomers.html)
 
 ### Resources
 
