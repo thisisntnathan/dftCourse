@@ -10,7 +10,7 @@ permalink: /introduction.html
 <center>
     <h4>Written by Nathan M. Lui (2023) <br>
     With contributions from Dr. Ryan A. Woltornist (2021), <br>
-    and many others, see the full list of contributors in the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute) </h4>
+    and many others; see the full list of contributors in the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute) </h4>
 </center>
 
 <br />
@@ -52,7 +52,7 @@ Electronic structure theory
 
 ### Problems
 
-My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry.  [Let me know](mailto:nml64@cornell.edu) if there's anything else you'd like to see here!  
+My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry. [Let me know](mailto:nml64@cornell.edu) if there's anything else you'd like to see here!  
 
 [Cyclohexane A-values (from the Short Course)](/dftCourse/ShortCourse/aValues.html)  
 [The Smelly Dimer Problem](/dftCourse/Problems/cpDimer.html)  
