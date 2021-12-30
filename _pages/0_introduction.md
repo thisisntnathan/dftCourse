@@ -65,7 +65,11 @@ My least favorite math teacher would always say that the only way to learn calcu
 <!-- Common error codes   -->
 [A collection of papers/resources I've amassed over the years.](/dftCourse/Resources/links.html)
 
-### Further Readings
+### Contributions
+
+If there's something you'd like to see or add to the course check out the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute)!
+
+### Supplemental Readings
 
 The *International Journal of Quantum Chemistry* has published an [excellent series of tutorial reviews](https://onlinelibrary.wiley.com/journal/1097461x) for novices and professionals alike. I highly recommend looking through them. Below are a few you may find particularly helpful.  
 
