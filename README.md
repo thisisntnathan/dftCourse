@@ -8,7 +8,16 @@ This course was designed with Cornell chemistry students as its principle audien
 
 ## Acknowledgements
 
-The DFT course was born from a document that's been passed down by members of the Collum Group at Cornell Chemistry since we started using DFT calculations to supplement our research on the mechanics of organolithium and organosodium chemistry. In this sense the all group members have had an impact on it, after all *we see further because we stand on the shoulders of giants* (and prior grad students).  
+The DFT course was born from a collection of documents that's been passed down by members of the Collum Group at Cornell Chemistry since we started using DFT calculations to supplement our research on the mechanics of organolithium and organosodium chemistry. In this sense all group members have had an impact on it, after all *we see further because we stand on the shoulders of giants* (and prior grad students).  
+
+The original conception of this course was compiled from ideas and documents written by:  
+
+- Dr. Ryan A. Woltornist (2021)  
+- Dr. Kyle A. Mack (2018)  
+- Dr. Russell F. Algera (2017)  
+- Dr. Alex Hoepker (2011)  
+- Prof. David B. Collum  
+- Prof. Barry Carpenter (Notes from CHEM 765 - Physical Organic Chemistry I)  
 
 ## So you want to contribute?
 
