@@ -40,7 +40,7 @@ E(RM062X) + Thermal correction                  =     -274.666928 Eh
 Sum of electronic and thermal Free Energies     =     -274.666928 Eh
 ```
 
-Now, you're probably not a physical chemists if you're on this page, so let's convert these numbers to a more common unit and calculate our A-value:
+Now, you're probably not a physical chemists if you're on this page, so let's convert these numbers to a more common unit and calculate our A-value (remember $ 1~E_h \approx 627.5 ~ \textrm{kcal mol}^{-1} $):
 
 ```
 eqMeCyhex:
