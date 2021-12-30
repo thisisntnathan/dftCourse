@@ -76,14 +76,10 @@ Next, we'll calculate the energy for our optimized structure. At this point, I *
 
 >With most *ab initio* methods absolute energies of molecular systems are calculated relative to free electrons and nuclei which is why they are large and negative.
 
-By default, <kbd>Gaussian</kbd> reports energies in Hartree atomic units (E<sub>h</sub> or A.U.):  
+By default, <kbd>Gaussian</kbd> reports energies in Hartree atomic units ($E_h$ or A.U.):  
 <center>
-    <math>
-        1 E<sub>H</sub> =  ħ<sup>2</sup> / m<sub>e</sub>ɑ<sub>0</sub><sup>2</sup> ≈ 627.5 kcal mol<sup>-1</sup>
-    </math>
+    $ 1~E_h = \frac{\hbar^2}{m_e~a_0^2} \approx 627.5 ~ \textrm{kcal mol^{-1}} $  
 </center>
-
-<br>
 
 The values we're interested in are:
 
@@ -96,12 +92,10 @@ The values we're interested in are:
 
 The `Thermal correction to Gibbs Free Energy` is calculated by:
 <center>
-    <math>
-        G<sub>corr</sub> = E<sub>thermal</sub> + <i>k</i><sub>B</sub>T - TS<sub>total</sub>
-    </math>
+    $ G_{corr} = E_{thermal} + \mathscr{k}_BT - TS_{total} $
 </center>
   
-The `Sum of electronic and thermal Free Energies` is the sum of the above `Thermal correction` and the `electronic energy` (also known as the `single point energy` since its the energy at a [single point on the potential energy surface](https://en.wikipedia.org/wiki/Potential_energy_surface)).<sup>2</sup> This `thermally-corrected single point energy` is the value that should be used to calculate free energies of reaction (ΔG<sub>*rxn*</sub>).
+The `Sum of electronic and thermal Free Energies` is the sum of the above `Thermal correction` and the `electronic energy` (also known as the `single point energy` since its the energy at a [single point on the potential energy surface](https://en.wikipedia.org/wiki/Potential_energy_surface)).<sup>2</sup> This `thermally-corrected single point energy` is the value that should be used to calculate free energies of reaction ($\Delta G_{rxn}$).
 
 <kbd>Gaussian</kbd> calculates the `single point energy` of each intermediate geometry it generates during optimization as well as at the start of a vibrational frequency analysis. We can exploit this fact to save us from having to set up another calculation. To find the `single point energy` search `eqMeCyhex.log` for **the last occurrence** of `SCF Done`:
 
