@@ -25,7 +25,9 @@ Discussion on the necessity of diffuse basis functions in anionic calcualtions
 
 [Common Gaussian error messages](https://docs.computecanada.ca/wiki/Gaussian_error_messages)  
 
-[The blog of Dr. Joaquin Barroso-Flores at Instituto de Química, UNAM, Mexico](https://joaquinbarroso.com/)  
+[The blog of Dr. Joaquin Barroso-Flores](https://joaquinbarroso.com/) (Instituto de Química, UNAM, Mexico City, MX)  
 Incredibly helpful for general troubleshooting  
 
 [Group meeting slides from Steven McKerrall (Baran Lab, TSRI, CA, USA)](https://www.scripps.edu/baran/images/grpmtgpdf/McKerrall_Feb_14.pdf)  
+
+[Computational Chemistry 2](https://www.cup.uni-muenchen.de/oc/zipse/teaching/computational-chemistry-2/) by Prof. Hendrik Zipse (LMU, Munich, DE)
