@@ -63,6 +63,9 @@ D    1   1.00
 
 ### Key takeaways
 
+<!-- TODO: Put in key takeaways once energies are done -->
+<!-- TODO: Add compute time table here (once job finish)  -->
+
 <br>
 
 | <center><a href="/dftCourse/introduction.html">Home</a></center> |
