@@ -27,19 +27,17 @@ Still unhappy with the results, your advisor tells you to re-run the computation
 
 Run your computations again, this time use `aug-cc-pvtz` to describe the N and *only the two O of the nitro group*. Keep everything else the same i.e.,  
 
-- C H: def2svp  
-- S F O(trifyl): def2tzvp  
-- N O(nitro): aug-cc-pvtz  
+- C H: `def2svp`  
+- S F O(trifyl): `def2tzvp`  
+- N O(nitro): `aug-cc-pvtz`  
 
 ### 3) Incorporating external basis sets into <kbd>Gaussian</kbd> calculations
 
-After a few second guesses, you're unsure of whether or not `aug-cc-pvtz` is really a suitable substitute for `def2tzvpd`. You're also kind of annoyed because using `aug-cc-pvtz` seems to take a **very** long time (see if you can figure out why?) and other group members are starting to complain that you're hogging compute time; you decide to try using `def2tzvpd` instead.  
+After a few second guesses, you're unsure of whether or not `aug-cc-pvtz` is really a suitable substitute for `def2tzvpd`; you decide to try using `def2tzvpd` instead. Re-run your calculations, this time use `def2tzvpd` instead of `aug-cc-pvtz` to describe the N and *only the two O of the nitro group*. Keep everything else the same i.e.,  
 
-Re-run your calculations, this time use `def2tzvpd` instead of `aug-cc-pvtz` to describe the N and *only the two O of the nitro group*. Keep everything else the same i.e.,  
-
-- C H: def2svp  
-- S F O(trifyl): def2tzvp  
-- N O(nitro): def2tzvpd  
+- C H: `def2svp`  
+- S F O(trifyl): `def2tzvp`  
+- N O(nitro): `def2tzvpd`  
 
 Remember that `def2tzvpd` is not built into <kbd>g16</kbd> so you'll have to get the basis set from the [Basis Set Exchange](https://www.basissetexchange.org/).$^1$ There are two ways to accomplish this task; see if you can figure them both out before going to [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo)!  
 
@@ -61,7 +59,7 @@ D    1   1.00
       0.14696477366          1.0000000
 ```
 
-### Key takeaways
+<!-- ### Key takeaways -->
 
 <!-- TODO: Put in key takeaways once energies are done -->
 <!-- TODO: Add compute time table here (once job finish)  -->
