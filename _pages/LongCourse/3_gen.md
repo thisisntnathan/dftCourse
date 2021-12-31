@@ -62,5 +62,5 @@ By default specifying a basis set in the routing line applies it to **all** atom
 
 #### References
 
-(1) [`gen`](https://gaussian.com/gen/)
+(1) [`gen`](https://gaussian.com/gen/)  
 (2) Unifying General and Segmented Contracted Basis Sets. Segmented Polarization Consistent Basis Sets by Frank Jensen[*J. Chem. Theory Comput.* **2014**, *10* (3), 1074](https://pubs.acs.org/doi/10.1021/ct401026a)
