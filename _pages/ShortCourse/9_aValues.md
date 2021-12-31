@@ -12,7 +12,7 @@ permalink: /ShortCourse/aValues.html
 The [A-value](https://goldbook.iupac.org/terms/view/A00012) of a substituent is the energy of the axial cyclohexane conformer relative to the equatorial conformer (i.e., the *isomerization energy*). In organic conformational analysis the A-value is used as the archetypal steric parameter.  
 
 <center>
-    <img src="/dftCourse/assets/a-value.png" width="396" height="77.9">
+    <img src="/dftCourse/assets/a-value.svg" width="396" height="77.9">
 </center>
 
 <br>
