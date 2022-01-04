@@ -8,9 +8,9 @@ permalink: /introduction.html
 <!-- markdownlint-disable-file MD026 -->
 
 <center>
-    <h4>Written by Nathan M. Lui (2023) <br>
+    <h4>Written by <a href='https://thisisntnathan.github.io' target='_blank'>Nathan M. Lui</a> (2023) <br>
     With contributions from Dr. Ryan A. Woltornist (2021) <br>
-    and many others; see the full list of contributors in the <a href='https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute'>GitHub repo</a></h4>
+    and many others; see the full list of contributors in the <a href='https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute' target='_blank'>GitHub repo</a></h4>
 </center>
 
 <br />
