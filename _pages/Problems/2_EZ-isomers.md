@@ -73,3 +73,4 @@ D    1   1.00
 #### Resources
 
 (1) [Basis Set Exchange](https://www.basissetexchange.org/)  
+(2) Vinyl cations. 12. Mechanism of reaction of cis- and trans-3-phenyl-2-buten-2-yl triflates. Evidence for vinylidene phenonium ions by Peter J. Stang and Thomas E. Dueber [*J. Am. Chem. Soc.* **1977**, *99* (8), 2602](https://pubs.acs.org/doi/abs/10.1021/ja00450a033)
