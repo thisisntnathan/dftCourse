@@ -15,7 +15,7 @@ permalink: /introduction.html
 
 <br />
 
-### The Short Course
+## The Short Course
 
 The *Short Course* is designed as a primer for advanced undergraduates and beginning graduate students. It is intended to give the completely inexperienced reader a step-by-step guide to running electronic structure calculations on the AS-CHEM computing cluster at Cornell University, but it is our hope that these instructions are easily generalizable to other computing clusters. The Short Course's main computational engine is <kbd>Gaussian16</kbd> since it was originally designed for Collum group members, however a *fully open-source* edition (utilizing [<kbd>Psi4</kbd>](https://psicode.org/)) is currently being written.  
 
@@ -29,7 +29,9 @@ The *Short Course* is designed as a primer for advanced undergraduates and begin
 [Understanding the <kbd>Gaussian</kbd> output file](/dftCourse/ShortCourse/gaussianOutputs.html)  
 [Putting it all together: calculating cyclohexane A-values](/dftCourse/ShortCourse/aValues.html)  
 
-### The Long Course
+<br />
+
+## The Long Course
 
 #### The Long Course is coming soon!
 
@@ -37,7 +39,7 @@ The *Long Course* is a set of more advanced topics in scripting and computationa
 
 Using <kbd>bash</kbd> to streamline computational workflow and data processing  
 Cost efficiency: Selecting basis sets and functionals without going overboard  
-Using custom basis sets and pseudopotentials  
+[Using custom basis sets and effective core potentials](/dftCourse/LongCourse/gen.html)  
 The ~~science~~ art of finding transition structures  
 Transition structure search using QST methods  
 The implicit/explicit solvation war  
@@ -50,7 +52,9 @@ Electronic structure theory
 [Electronic structure theory](/dftCourse/Tutorials/CompChem/9_introToEST.html)   
 -->
 
-### Problems
+<br />
+
+## Problems
 
 My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry. [Let me know](mailto:nml64@cornell.edu) if there's anything else you'd like to see here!  
 
@@ -58,7 +62,9 @@ My least favorite math teacher would always say that the only way to learn calcu
 [The Smelly Dimer Problem](/dftCourse/Problems/cpDimer.html)  
 [E-Z isomers of 3-(4-nitrophenyl)but-2-en-2-yl triflate](/dftCourse/Problems/ezIsomers.html)
 
-### Resources
+<br />
+
+## Resources
 
 [The Code Repo: Exercises and Problems](https://github.com/thisisntnathan/dftCourseCodeRepo)  
 <!-- Best practices   -->
@@ -66,9 +72,13 @@ My least favorite math teacher would always say that the only way to learn calcu
 <!-- Common error codes   -->
 [A collection of papers/resources I've amassed over the years.](/dftCourse/Resources/links.html)
 
-### Contributions
+<br />
+
+## Contributions
 
 If there's something you'd like to see or add to the course check out the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute)!
+
+<br />
 
 ### Supplemental Readings
 
