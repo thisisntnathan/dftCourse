@@ -124,7 +124,7 @@ My favorite food is pizza.
 I am  years old.
 ```
 
-This is because <kbd>bash</kbd> automatically initializes uninitialized variables to `null` at first use. So how do we get the script to print our age? We can initialize `age` as an environmental variable and export it to our script. We can do this in one step using `export`.
+This is because <kbd>bash</kbd> automatically initializes uninitialized variables to `null` at first use (i.e. it has no value). So how do we get the script to print our age? We can initialize `age` as an environmental variable and export it to our script. We can do this in one step using `export`.
 
 ```sh
 NathanLui@local | ~ $ export age=26
@@ -134,7 +134,7 @@ My favorite food is pizza.
 I am 26 years old.
 ```
 
-You might be wondering why would ever need to do this. Often times we'll be working with programs that can't be easily modified, or we'll want to set variables once instead of every single time we run the program. These tasks can be easily accomplished using environmental variables.
+You might be wondering why would ever need to do this. Often times we'll be working with programs and complex algorithms that can't be easily modified, or we'll want to set variables once instead of every single time we run the program. These tasks can be easily accomplished using environmental variables.
 
 Scripting is useful for more than telling the world your favorite food and how old you are. Its our primary way of sending instructions to the cluster. When we submit jobs to the CHEM cluster's resource manager <kbd>SLURM</kbd> we do so in the form of shell scripts. More on that in the next chapter.
 
