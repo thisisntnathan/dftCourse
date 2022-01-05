@@ -29,8 +29,6 @@ The *Short Course* is designed as a primer for advanced undergraduates and begin
 [Understanding the <kbd>Gaussian</kbd> output file](/dftCourse/ShortCourse/gaussianOutputs.html)  
 [Putting it all together: calculating cyclohexane A-values](/dftCourse/ShortCourse/aValues.html)  
 
-<br />
-
 ## The Long Course
 
 #### The Long Course is coming soon!
@@ -52,8 +50,6 @@ Electronic structure theory
 [Electronic structure theory](/dftCourse/Tutorials/CompChem/9_introToEST.html)   
 -->
 
-<br />
-
 ## Problems
 
 My least favorite math teacher would always say that the only way to learn calculus is to solve lots of calculus problems. This is a collection of case studies and practice problems that you can use to try your own hand at computational chemistry. [Let me know](mailto:nml64@cornell.edu) if there's anything else you'd like to see here!  
@@ -61,8 +57,6 @@ My least favorite math teacher would always say that the only way to learn calcu
 [Cyclohexane A-values (from the Short Course)](/dftCourse/ShortCourse/aValues.html)  
 [The Smelly Dimer Problem](/dftCourse/Problems/cpDimer.html)  
 [E-Z isomers of 3-(4-nitrophenyl)but-2-en-2-yl triflate](/dftCourse/Problems/ezIsomers.html)
-
-<br />
 
 ## Resources
 
@@ -72,15 +66,11 @@ My least favorite math teacher would always say that the only way to learn calcu
 <!-- Common error codes   -->
 [A collection of papers/resources I've amassed over the years.](/dftCourse/Resources/links.html)
 
-<br />
-
 ## Contributions
 
 If there's something you'd like to see or add to the course check out the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute)!
 
-<br />
-
-### Supplemental Readings
+## Supplemental Readings
 
 The *International Journal of Quantum Chemistry* has published an [excellent series of tutorial reviews](https://onlinelibrary.wiley.com/journal/1097461x) for novices and professionals alike. I highly recommend looking through them. Below are a few you may find particularly helpful.  
 
