@@ -53,7 +53,7 @@ nml64@as-chm-cluster | ~ $
 See how the terminal prompt has now changed from `NathanLui@local` to `nml64@as-chm-cluster` to indicate that I'm now working on the cluster. We can navigate the cluster with the same commands we learned [earlier](/dftCourse/ShortCourse/linuxBasics.html). To test our script we'll need to use our SFTP client (FileZilla) to transfer our scripts to the cluster. If you haven't yet, go set up FileZilla using the directions in [section 1](/dftCourse/ShortCourse/software.html). Once you've done that, open FileZilla and connect to the `AS-CHEM` cluster. Drag your whole `myFirstSlurmJob` folder into the cluster pane to transfer it.  
 
 <center>
-    <img src="/dftCourse/assets/5_1.png" width="641.5" height="462.5">
+    <img src="/dftCourse/assets/images/SC/5_1.png" width="641.5" height="462.5">
 </center>
 
 >Of course, you have the option to create a new folder on the cluster directly using `mkdir` and then drag the individual shell scripts into that file, but as your experience grows as will the number of files you'll have to keep track of. It will be much more manageable if the organization of your local system mirrors that of the cluster. Transferring whole directories ensures that paths will remain the same. For more, see [best practices]().  

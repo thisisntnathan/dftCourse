@@ -12,7 +12,7 @@ permalink: /Problems/ezIsomers.html
 Your advisor wants you to compute ground state energies for the two isomers of 3-(4-nitrophenyl)but-2-en-2-yl triflate. First, run a standard optimization/frequency calculation for the isomers at the `M062X/def2svp` level of theory. As always, you can check your work at [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo).  
 
 <center>
-    <img src="/dftCourse/assets/ez_triflate.svg" width="500" height="120.33">
+    <img src="/dftCourse/assets/images/Problems/ez_triflate.svg" width="500" height="120.33">
 </center>
 
 ### 1) Specifying different built-in basis sets for different atoms

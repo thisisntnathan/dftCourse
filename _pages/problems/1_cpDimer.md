@@ -11,7 +11,7 @@ permalink: /Problems/cpDimer.html
 Cyclopentadiene is a fairly common reagent in both organic and organometallic synthesis, however its use is complicated by its facile dimerization into dicyclopentadiene *via* a Diels-Alder cycloaddition.  
 
 <center>
-    <img src="/dftCourse/assets/cpdimer.svg" width="396" height="77.9">
+    <img src="/dftCourse/assets/images/Problems/cpdimer.svg" width="396" height="77.9">
 </center>
 
 Your PI Prof. Batman and his lab manager Dr. Robin ask if you could use your newfound computational skills to study this reaction. In particular, they'd like to know:  

@@ -11,7 +11,7 @@ permalink: /ShortCourse/gaussianOutputs.html
 For easier analysis, let's drag all of our files back onto our personal laptop using FileZilla. (If you want you can try to read the <kbd>Gaussian</kbd> `.log` file in the terminal, but you'll soon see why that's not going to scale well.)
 
 <center>
-    <img src="/dftCourse/assets/7_1.png" width="641.5" height="462.5">
+    <img src="/dftCourse/assets/images/SC/7_1.png" width="641.5" height="462.5">
 </center>
 
 We won't use the `fort.7` file and `eqMeCyhex_oe` has a total size of 0 bytes (i.e., there's nothing written in it) so for the sake of cleanliness we can delete those. First, let's look at our optimized structure to make sure the final geometry makes chemical sense. Open `eqMeCyhex.log` in <kbd>GaussView</kbd> (download it from the [code repo](https://github.com/thisisntnathan/dftShortCourseFiles/blob/370b1efe3fbc332fc7beef72050ffe52b357fcf5/eqMeCyclohexane/eqMeCyhex.log) if you're not following along).  
@@ -19,7 +19,7 @@ We won't use the `fort.7` file and `eqMeCyhex_oe` has a total size of 0 bytes (i
 <div class="message">
     If you're using <kbd>GaussView5</kbd> with <kbd>Gaussian16</kbd> you'll most likely run into this error:
         <center>
-            <img src="/dftCourse/assets/GLOG_Parse_Error.png" width="300" height="124.5">
+            <img src="/dftCourse/assets/images/SC/GLOG_Parse_Error.png" width="300" height="124.5">
         </center>
     Don't panic, this issue occurs because <kbd>g16</kbd> writes some extra information in the output file that <kbd>GaussView5</kbd> doesn't know how to handle. Use <a href="https://gist.github.com/thisisntnathan/2aab4e51f1887c2e41feb71b081d5a7f">this script</a> provided by Dr. Davor Šakić from the University of Zagreb to generate a output file that <kbd>GaussView5</kbd> can read.
 </div>
@@ -27,7 +27,7 @@ We won't use the `fort.7` file and `eqMeCyhex_oe` has a total size of 0 bytes (i
 <kbd>GaussView</kbd> shows us a perfectly normal equatorial methylcyclohexane.
 
 <center>
-    <img src="/dftCourse/assets/eqMeCyhex.png" width="414.6" height="246.6">
+    <img src="/dftCourse/assets/images/SC/eqMeCyhex.png" width="414.6" height="246.6">
 </center>
 
 You should always check your structures to make sure they are generally expected since not all *mathematical* solutions are *physical* ones. Sometimes our jobs will give us chemically nonsensical solutions simply because the algorithm found a particular energy well that it couldn't get out of.  
