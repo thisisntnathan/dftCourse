@@ -4,7 +4,7 @@ title: The art of finding transition structures
 # short-title: Transition Structure Search
 sub-title: The DFT Long Course
 sidebar_link: true
-sidebar_sort_order: 5
+sidebar_sort_order: 6
 permalink: /LongCourse/transitionStructureSearch.html
 ---
 

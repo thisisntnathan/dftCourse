@@ -3,7 +3,7 @@ layout: page
 title: What is a transition state?
 sub-title: The DFT Long Course
 sidebar_link: true
-sidebar_sort_order: 4
+sidebar_sort_order: 5
 permalink: /LongCourse/transitionState.html
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Custom Basis Sets and Effective Core Potentials in <kbd>Gaussian</kbd>
 sub-title: The DFT Long Course
 sidebar_link: true
-sidebar_sort_order: 3
+sidebar_sort_order: 4
 permalink: /LongCourse/gen.html
 ---
 <!-- markdownlint-disable-file MD040 -->
