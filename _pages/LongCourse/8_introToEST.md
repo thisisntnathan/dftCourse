@@ -2,7 +2,7 @@
 layout: page
 title: Electronic Structure Theory
 sub-title: The DFT Long Course
-sidebar_link: true
+sidebar_link: false
 sidebar_sort_order: 8
 permalink: /LongCourse/est.html
 ---
