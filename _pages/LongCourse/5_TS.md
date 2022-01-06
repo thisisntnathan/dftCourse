@@ -7,7 +7,7 @@ sidebar_sort_order: 5
 permalink: /LongCourse/transitionState.html
 ---
 
-Transition state theory was first developed by Erying (Princeton), Evans (Manchester), and Polyani (Manchster) in the early 20th century.<sup>1</sup> Their early conceptions unified classical thermodynamics, statistical mechanics, and early kinetic theory. The theory is comprised of 3 major points:<sup>2</sup>
+Transition state theory was first developed by Erying (Princeton), Evans (Manchester), and Polyani (Manchster) in the early 20th century.<sup>1</sup> Their early conceptions unified classical thermodynamics, statistical mechanics, and early kinetic theory. The theory is comprised of three major tenets:<sup>2</sup>
 
 1. Rates of reaction can be studied by examining activated complexes near the saddle point of a potential energy surface. The details of how these complexes are formed are not important. The saddle point itself is called the transition state.  
 2. The activated complexes are in a quasi-equilibrium with the reactant molecules.  
