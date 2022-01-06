@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Custom Basis Sets and Effective Core Potentials in <kbd>Gaussian</kbd>
+short-title: Alternative basis sets and ECPs
 sub-title: The DFT Long Course
 sidebar_link: true
 sidebar_sort_order: 4
