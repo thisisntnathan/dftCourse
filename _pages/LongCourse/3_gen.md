@@ -141,7 +141,7 @@ The computational cost of a calculation scales with the size of the system, name
 An effective core potential is a basis function (a *pseudo*-orbital) that is used to "substitute" the inner (core) electrons of an atom. The pseudo-orbitals are formulated to be nodeless in the core region (**Figure 1**).<sup>4</sup> It provides a relativistic effective potential for each core orbital eliminating the need for core basis functions and leading to a substantial reduction in computational effort. Most ECPs are built in a form defined by [Pacios and Christiansen (1985)](https://doi.org/10.1063/1.448263).<sup>5</sup> A more formal explanation can be found in [ref 4](http://www.cchem.berkeley.edu/walgrp/q780/node16.html).  
 
 <center>
-    <img src="/dftCourse/assets/pseudoOrbital.png" width="617" height="321">
+    <img src="/dftCourse/assets/images/LC/pseudoOrbital.png" width="617" height="321">
     <b>Figure 1.</b> Typical shape of <em>pseudo</em>-orbital. Reproduced from <a href='http://www.cchem.berkeley.edu/walgrp/q780/node16.html'>ref 4</a>.
 </center>
 
@@ -150,7 +150,7 @@ An effective core potential is a basis function (a *pseudo*-orbital) that is use
 One of the largest questions in the design of ECPs is what constitutes a "core" electron. ECPs come in two "flavors:" large-core and small-core. Large-core ECPs typically substitute all but the outer shell electrons while small-core ECPs substitute all but the outer *two* shells. For example, consider the three representations of bromine (**Figure 2**).<sup>6</sup> Of the two, small-core ECPs are more expensive to use, but typically demonstrate much more acceptable accuracy.<sup>7</sup>  
 
 <center>
-    <img src="/dftCourse/assets/brecp.gif">
+    <img src="/dftCourse/assets/images/LC/BrECP.gif">
     <b>Figure 2.</b> All-electron, small-core, and large-core representations of bromine. Core electrons are designated in black while quantum mechanically treated electrons are denoted in blue. Reproduced from <a href='https://www.cup.uni-muenchen.de/oc/zipse/teaching/computational-chemistry-2/topics/effective-core-potentials-ecp/'>ref 6</a>.
 </center>
 
