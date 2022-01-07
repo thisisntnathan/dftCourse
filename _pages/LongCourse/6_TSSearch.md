@@ -18,7 +18,7 @@ This lesson will focus on four methods of searching for transition structures. T
 1. 2-Structure Synchronous Transit-Guided Quasi-Newton Method (QST2)  
 2. TS guess with frozen bond approximations  
 3. 3-Structure Synchronous Transit-Guided Quasi-Newton Method (QST3)  
-4. Potential energy surface scan  
+4. Relaxed potential energy scan  
 
 <br />
 
@@ -144,7 +144,51 @@ As in QST2, it is essential that all of the atoms in the molecule specifications
 
 ## Potential energy surface scan  
 
+If you've gotten to this point then we're really at our wits end. A scan of the potential energy surface essentially implements a linear transit of the specified coordinate calculating the energies of the intermediate structures. Ideally,this method produces an approximation of the reaction pathway along *a single reaction coordinate*. There are two different kinds of potential energy surface scans available in <kbd>Gaussian</kbd>. The *rigid* potential energy surface scan and the *relaxed* potential energy scan. A relaxed PES scan optimizes the structures around the specified coordinate values at each step, while a rigid PES scan calculates only energies using the specified coordinates. Both methods work in the same way, but the PES is typically faster (since there are no optimizations to complete), however the result of a rigid PES scan **must be reoptimized using the** `OP=TS` **method described above**. In practice it is good to do the PES scan at a lower (less expensive) level of theory and then reoptimize the results of all PES derived structures.  
 
+To set up a relaxed potential energy scan call a typical optimization with the option `ModRedundant` if optimizing in redundant internal coordinates or `addGIC` when optimizing in general internal coordinates. Similar to a TS optimization the desired reaction coordinate and its search increment is defined after the molecule specification. Any defined coordinate (bond length, bond angle, and dihedral angle) can be scanned in a PES scan. Define a coordinate to tell <kbd>Gaussian</kbd> which coordinate to scan and by how much. Depending on your optimization coordinate system preference this specification will either take the form `<AtomNumbers> <Initial Value> S <NSteps> <StepSize>` (in redundant internals) or `<CoordinateName>(<StepSize=x> <NSteps=n>) = <CoordinateType>(<AtomNumbers>)` (in general internals). You can only scan one coordinate at a time.  
+
+```
+%chk=jobName.chk     ! you want to save a checkpoint, can also do this with GAUSS_YDEF
+#N M062X/def2svp OPT=AddGIC/ModRedundant ...
+<<Blank line>>
+Title section
+<<Blank line>>
+Molecule specification    ! use the best guess geometry from above
+<<Blank line>>
+! if optimizing in redundant internals choose one of these
+16 21 1.5 S 10 0.1          ! increase the 16-21 bond length 10 times by 0.1A each step
+16 21 22 125.6 S 10 2.5     ! increase the 16-21-22 bond angle 10 times by 2.5 deg each step
+15 16 21 22 120.2 S 10 2.5  ! increase the 15-16-21-22 dihedral angle 10 times by 2.5 deg each step
+! if optimizing in GIC choose one of these:
+TS(StepSize=0.1 NSteps=10) = B(16,21)   ! increase the 16-21 bond length 10 times by 0.1A each step
+TS(StepSize=2.5 NSteps=10) = A(16,21,22)   ! increase the 16-21-22 bond angle 10 times by 2.5 deg each step
+TS(StepSize=2.5 NSteps=10) = D(15,16,21,22)   ! increase the 15-16-21-22 dihedral angle 10 times by 2.5 deg each step
+<<Blank line>>       ! additional input, if any, follows
+...
+```
+
+To set up a rigid PES scan use the [keyword `scan`](https://gaussian.com/scan/). According to the documentation, a rigid PES scan must be done in <kbd>Gaussian</kbd>'s redundant internal coordinates.  
+
+```
+%chk=jobName.chk     ! you want to save a checkpoint, can also do this with GAUSS_YDEF
+#N M062X/def2svp SCAN ...
+<<Blank line>>
+Title section
+<<Blank line>>
+Molecule specification    ! use the best guess geometry from above
+<<Blank line>>
+! if optimizing in redundant internals choose one of these
+16 21 1.5 S 10 0.1          ! increase the 16-21 bond length 10 times by 0.1A each step
+16 21 22 125.6 S 10 2.5     ! increase the 16-21-22 bond angle 10 times by 2.5 deg each step
+15 16 21 22 120.2 S 10 2.5  ! increase the 15-16-21-22 dihedral angle 10 times by 2.5 deg each step
+<<Blank line>>       ! additional input, if any, follows
+...
+```
+
+The resultant structure of a PES scan should be submitted for a TS optimization and frequency calculation at the standard level of theory to ensure it is fully minimized and a true first-order saddle point.  
+
+At this point, you should have a fully converged transition structure; head down to the the [verification section](#verification). If this is not the case then there's something really wrong with you guesses propose a different transition structure and attempt the search again, or seek help! It takes experience to be able to intuit a valid transition structure for all but the most simple of reactions.  
 
 ## Verification of transition structures <a name="verification"></a>
 
@@ -156,3 +200,5 @@ As in QST2, it is essential that all of the atoms in the molecule specifications
 (1) C. Peng & H. B. Schlegel “Combining Synchronous Transit and Quasi-Newton Methods for Finding Transition States” [*Israel J. Chem.*, **1993**, *33*, 449.](http://dx.doi.org/10.1002/ijch.199300051)  
 (2) [Transition States and Reaction Paths *for* Computational Chemistry Course *by* Prof. Ephraim Eliav](https://www.tau.ac.il/~ephraim/TranState.pdf)  
 (3) E. Chamorro, Y. Prado, M. Duque-Noreña, N. Gutierrez-Sánchez & E. Rincón "Understanding the sequence of the electronic flow along the HCN/CNH isomerization within a bonding evolution theory quantum topological framework" [*Theor. Chem. Acc.* **2019**, *138*, 60](https://doi.org/10.1007/s00214-019-2440-3)  
+(4) [Keyword `opt`](https://gaussian.com/opt/)  
+(5) [Keyword `scan`](https://gaussian.com/scan/)  
