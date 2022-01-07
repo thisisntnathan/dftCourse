@@ -36,16 +36,18 @@ The *Short Course* is designed as a primer for advanced undergraduates and begin
 The *Long Course* is a set of more advanced topics in scripting and computational chemistry. It was written for those who have, or would like to, incorporate more advanced calculations/models into their research. The topics start by the computational streamlining workflow (with <kbd>bash</kbd> scripting) and then progress towards the more under-the-hood options of computational engines.  
 
 Using <kbd>bash</kbd> to streamline computational workflow and data processing  
+So what exactly is an optimization?  
 Cost efficiency: Selecting basis sets and functionals without going overboard  
 [Using custom basis sets and effective core potentials](/dftCourse/LongCourse/gen.html)  
-The ~~science~~ art of finding transition structures  
-Transition structure search using QST methods  
+[What is a transition state?](/dftCourse/LongCourse/transitionState.html)  
+[The ~~science~~ art of finding transition structures](/dftCourse/LongCourse/transitionStructureSearch.html)  
 The implicit/explicit solvation war  
 Electronic structure theory
-<!-- 
+
+<!-- TODO: These pages:
 [(More) advanced job scripting with <kbd>bash</kbd>](/dftCourse/LongCourse/bashScripting.html)  
-[Cost efficiency: Selecting basis sets and functionals without going overboard](/dftCourse/LongCourse/basisSets.html)  
-[Transition structure search using QST methods](/dftCourse/LongCourse/QST.html)  
+[What is an optimization?](/dftCourse/LongCourse/optimization.html)  
+[Cost efficiency: Selecting basis sets and functionals without going overboard](/dftCourse/LongCourse/basisSets.html)   
 [The implicit/explicit solvation war](/dftCourse/LongCourse/solvationModels.html)  
 [Electronic structure theory](/dftCourse/Tutorials/CompChem/9_introToEST.html)   
 -->
