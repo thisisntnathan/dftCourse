@@ -106,7 +106,7 @@ If this calculation converges then skip down to the [verification section](#veri
 
 ## 3-Structure Synchronous Transit-Guided Quasi-Newton Method (QST3)
 
-The QST3 method uses the same search algorithm as the 
+<!-- The QST3 method uses the same search algorithm as QST2 but  -->
 
 ## Potential energy surface scan  
 
