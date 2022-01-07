@@ -24,7 +24,7 @@ This lesson will focus on four methods of searching for transition structures. T
 
 ## 2-Structure Synchronous Transit-Guided Quasi-Newton Method (QST2)
 
-The Synchronous Transit-Guided Quasi-Newton methods were developed by [Peng and Schlegel](http://dx.doi.org/10.1002/ijch.199300051) in the 90s.<sup>1</sup> These methods employ a linear or quatradic synchronous transit (L/Q-ST) approach to approximate the saddle region and then switch to a *quasi*-Newton search for the true transition structure. In a the synchronous transit approach a (linear or parabolic) path along the reaction coordinates is plotted and the energies along the path are sampled (**Fgiure 1a**). The highest energy structure along the path is then efficiently optimized to the transition structure (**Figure 1b**) using an approximate quadratic search (quasi-Newton).  
+The Synchronous Transit-Guided Quasi-Newton methods were developed by [Peng and Schlegel](http://dx.doi.org/10.1002/ijch.199300051) in the 90s.<sup>1</sup> These methods employ a linear or quatradic synchronous transit (L/Q-ST) approach to approximate the saddle region and then switch to a *quasi*-Newton search for the true transition structure. In a the synchronous transit approach a (linear or parabolic) path along the reaction coordinates is plotted and the energies along the path are sampled (**Fgiure 1a**). The highest energy structure along the path is then efficiently optimized to the transition structure (**Figure 1b**) using an approximate quadratic search ([quasi-Newton](https://en.wikipedia.org/wiki/Quasi-Newton_method)).  
 
 <center>
 <div class="row">
