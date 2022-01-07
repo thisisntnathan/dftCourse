@@ -22,7 +22,7 @@ In all cases a split basis set has been utilized to reduce computational costs a
 ### Step 1: Optimize a ground state geometry
 
 ```
-#N Level of Theory/Basis Set (LL) OPT=gediis FREQ=NoRaman 
+#N Level of Theory/Basis Set (LL) OPT FREQ=NoRaman 
 temperature=Temperature Integral(Grid=UltraFine)
 ```
 
@@ -39,7 +39,7 @@ temperature=Temperature Integral(Grid=UltraFine)
 ### Step 1:  Optimization around the active atoms
 
 ```
-#N Level of Theory/Basis Set (LL) OPT=(TS,gediis,EstmFC,ModRedundant,NoEigentest) 
+#N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,ModRedundant,NoEigenTest) 
 Geom=Connectivity  
 ```
 
@@ -50,6 +50,11 @@ e.g. `B 74 94 F`
 
 #### If optimizing using Generalized Internal Coordinates (GIC)
 
+```
+#N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,AddGIC,NoEigenTest) 
+Geom=Connectivity  
+```
+
 At the end of the input file, add: `CoordinateName(freeze)=R(Atom 1 number,atom 2 number)`  
 Where atoms 1 and 2 will be frozen in the geometry optimization  
 e.g. `BrC(freeze)=R(54,46)`
@@ -58,7 +63,7 @@ e.g. `BrC(freeze)=R(54,46)`
 ### Step 2: Geometry optimization of the active atoms
 
 ```
-#N Level of Theory/Basis Set (LL) OPT=(TS,gediis,CalcFC,NoEigentest) 
+#N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,NoEigentest) 
 freq=NoRaman temperature=Temperature Geom=Connectivity Integral(Grid=UltraFine)
 ```
 
@@ -77,7 +82,7 @@ freq=NoRaman temperature=Temperature Geom=Connectivity Integral(Grid=UltraFine)
 If using `QST3`, also optimize the best guess for the transition structure.  
 
 ```
-#N Level of Theory/Basis Set (LL) OPT=gediis FREQ=NoRaman 
+#N Level of Theory/Basis Set (LL) OPT FREQ=NoRaman 
 temperature=Temperature Integral(Grid=UltraFine)
 ```
 
