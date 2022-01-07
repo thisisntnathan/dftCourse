@@ -46,7 +46,7 @@ Taking a cross-sectional slice of the surface, *along the axis formed by the two
 
 <br />
 
-So now that we know *what* we're looking for, we can start to figure out *how* we're going to do it. In the next lesson we'll cover some of the available methods of identifying transition structures.
+Recall of course that this is a vast oversimplification. The reaction coordinate space is 3N-6 dimensional (where N is the number of atoms) so when we draw 3D energy surfaces or 2D reaction coordinate diagrams we're only looking at slices of a much more complex hypersurface. So now that we know *what* we're looking for, we can start to figure out *how* we're going to do it. In the next lesson we'll cover some of the available methods of identifying transition structures.
 
 <!-- TODO: This feels incomplete, maybe we return to it later and add some more discussion? Maybe this will feel better once we write the next section  -->
 
