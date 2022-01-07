@@ -40,7 +40,6 @@ temperature=Temperature Integral(Grid=UltraFine)
 
 ```
 #N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,ModRedundant,NoEigenTest) 
-Geom=Connectivity  
 ```
 
 Then, at the end of the input file, add: `B [Atom 1 number] [Atom 2 number] F`  
@@ -51,8 +50,7 @@ e.g. `B 74 94 F`
 #### If optimizing using Generalized Internal Coordinates (GIC)
 
 ```
-#N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,AddGIC,NoEigenTest) 
-Geom=Connectivity  
+#N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,AddGIC,NoEigenTest)
 ```
 
 At the end of the input file, add: `CoordinateName(freeze)=R(Atom 1 number,atom 2 number)`  
@@ -64,7 +62,7 @@ e.g. `BrC(freeze)=R(54,46)`
 
 ```
 #N Level of Theory/Basis Set (LL) OPT=(TS,CalcFC,NoEigentest) 
-freq=NoRaman temperature=Temperature Geom=Connectivity Integral(Grid=UltraFine)
+freq=NoRaman temperature=Temperature Integral(Grid=UltraFine)
 ```
 
 ### Step 3: Calculation of single point transition state energies
