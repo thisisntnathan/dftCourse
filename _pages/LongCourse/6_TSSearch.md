@@ -9,7 +9,6 @@ permalink: /LongCourse/transitionStructureSearch.html
 ---
 <!-- markdownlint-disable-file MD040 -->
 <a name='top'></a>
-This lesson is not done yet
 
 Finding transition structures is one of the most challenging tasks in computational organic chemistry; moreso than ground state optimizations since the resulting structures are, by definition, unstable ones. The process requires both careful setup of the problem as well as the dreaded chemical intuition.  
 
