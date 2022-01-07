@@ -24,7 +24,7 @@ This lesson will focus on four methods of searching for transition structures. T
 
 ## 2-Structure Synchronous Transit-Guided Quasi-Newton Method (QST2)
 
-The Synchronous Transit-Guided Quasi-Newton methods were developed by [Peng and Schlegel](http://dx.doi.org/10.1002/ijch.199300051) in the 90s.<sup>1</sup> These methods employ a linear or quatradic synchronous transit (L/Q-ST) approach to approximate the saddle region and then switch to a *quasi*-Newton search for the true transition structure. In a the synchronous transit approach a (linear or quadratic) path along the reaction coordinates is plotted and the energies along the path are sampled (**Fgiure 1a**). The highest energy structure along the path is then efficiently optimized to the transition structure (**Figure 1b**) using an approximate quadratic search (quasi-Newton).  
+The Synchronous Transit-Guided Quasi-Newton methods were developed by [Peng and Schlegel](http://dx.doi.org/10.1002/ijch.199300051) in the 90s.<sup>1</sup> These methods employ a linear or quatradic synchronous transit (L/Q-ST) approach to approximate the saddle region and then switch to a *quasi*-Newton search for the true transition structure. In a the synchronous transit approach a (linear or parabolic) path along the reaction coordinates is plotted and the energies along the path are sampled (**Fgiure 1a**). The highest energy structure along the path is then efficiently optimized to the transition structure (**Figure 1b**) using an approximate quadratic search (quasi-Newton).  
 
 <center>
 <div class="row">
@@ -51,19 +51,29 @@ I call these *ensembles* because (unless you're studying a unimolecular to unimo
 %chk=jobName.chk     ! you want to save a checkpoint, can also do this with GAUSS_YDEF
 #N M062X/def2svp OPT=QST2 Freq=(NoRaman) ...    ! all optimizations need a freq
 <<Blank line>>       ! QST2 tells g16 that we want a transition structure search
-First title section
+Reactants title section
 <<Blank line>>
 Molecule specification for the reactants
 <<Blank line>>
-Second title section
+Products title section
 <<Blank line>>
 Molecule specification for the products
+<<Blank line>>       ! additional input, if any, follows
 ...
 ```
 
 >The atom numbers in both molecule specifications **must be the same** so that <kbd>Gaussian</kbd> can map the reaction coordinate atom by atom.
 
-The starting guess for the transition structure is midway between the reactant and product geometries (which is why they must be optimized beforehand). Additionally, this allows you to calculate a $\Delta G^{\ddagger}_{rxn}$. In <kbd>Gaussian</kbd> the QST2 is the quickest path to a saddle point and typically works well. However, this method fails if the "average" geometry between reactants and products is chemically illogical (e.g., complex stereoinversions and isomerizations). If your calculation converges to a logical transition structure skip down to the [verification section](#verification). Otherwise, try a TS guess!  
+The starting guess for the transition structure is midway between the reactant and product geometries, which is why these structures must be optimized beforehand. Additionally, this allows you to calculate a $\Delta G^{\ddagger}_{rxn}$. In <kbd>Gaussian</kbd> the QST2 is the quickest path to a saddle point and typically works well. However, this method fails if the "average" geometry between reactants and products is chemically illogical (e.g., complex stereoinversions and isomerizations). For example, consider the isomerization of hydrogen cyanide to hydrogen isocyanide (**Figure 2**). In this case the "average" structure places the hydrogen *inside* the C≡N bond. A QST2 search of this reaction will **not** converge to the true three-center transition structure.  
+
+<center>
+  <img src= '/dftCourse/assets/images/LC/HCN_CNH.webp' style="width:70%">
+  <b>Figure 2.</b> The isomerization of isomerization of hydrogen cyanide to hydrogen isocyanide. Reproduced from <a href='https://link.springer.com/article/10.1007/s00214-019-2440-3/' target="_blank">ref. 3</a>.
+</center>
+
+<br>
+
+If your calculation converges to a logical transition structure skip down to the [verification section](#verification). If your calculation has trouble converging to a stationary point you can try adding calculating force constants at the start of the optimization with `OPT=(QST2,calcFC)`. This will add a small amount of time, but will ensure that the optimization gets started correctly. The option `calcFC` calculates force constants for the first step in the optimization; use `calcALL` to tell <kbd>Gaussian</kbd> to calculate force constants at *every* step of the optimization. N.b. this is only for very difficult convergence issues and will add a **significant** amount of time to your calculation; if you're considering this option seek help first as there's probably a unseen issue that's causing your jobs to fail. If this method won't work for you, try a TS guess!  
 
 ## TS guess with frozen bond approximations
 
@@ -91,6 +101,7 @@ Title section
 Molecule specification
 <<Blank line>>
 Coordinates of active atoms
+<<Blank line>>       ! additional input, if any, follows
 ...
 ```
 
@@ -106,9 +117,34 @@ If this calculation converges then skip down to the [verification section](#veri
 
 ## 3-Structure Synchronous Transit-Guided Quasi-Newton Method (QST3)
 
-<!-- The QST3 method uses the same search algorithm as QST2 but  -->
+The QST3 method uses the same search algorithm as QST2, but takes one more input: a "best guess" or [ansatz](https://en.wikipedia.org/wiki/Ansatz) of your transition structure. The quadratic synchronous transit then draws a parabolic search path from the reactants to the products *through the ansatz* in the reaction coordinate space and then proceeds in the same manner as a QST2 search.  
+
+To call the QST3 search in Gaussian use the `OPT=QST3` keyword:  
+
+```
+%chk=jobName.chk     ! you want to save a checkpoint, can also do this with GAUSS_YDEF
+#N M062X/def2svp OPT=QST3 Freq=(NoRaman) ...    ! all optimizations need a freq
+<<Blank line>>       ! QST3 tells g16 that we want a transition structure search
+Reactant title section
+<<Blank line>>
+Molecule specification for the reactants 
+<<Blank line>>
+Product title section
+<<Blank line>>
+Molecule specification for the products
+<<Blank line>>
+Ansatz title section
+<<Blank line>>
+Molecule specification for the ansatz
+<<Blank line>>       ! additional input, if any, follows
+...
+```
+
+As in QST2, it is essential that all of the atoms in the molecule specifications are numbered the same. Otherwise, <kbd>Gaussian</kbd> won't be able to correctly map the atoms in the reaction coordinate space. Likewise, the options `calcFC` and `calcALL` can help with difficult convergence issues in this calculation. If this calculation converges then skip down to the [verification section](#verification), otherwise proceed to a potential energy scan.  
 
 ## Potential energy surface scan  
+
+
 
 ## Verification of transition structures <a name="verification"></a>
 
@@ -117,5 +153,6 @@ If this calculation converges then skip down to the [verification section](#veri
 
 #### References
 
-(1) C. Peng and H. B. Schlegel, “Combining Synchronous Transit and Quasi-Newton Methods for Finding Transition States,” [*Israel J. Chem.*, **1993**, *33*, 449.](http://dx.doi.org/10.1002/ijch.199300051)  
+(1) C. Peng & H. B. Schlegel “Combining Synchronous Transit and Quasi-Newton Methods for Finding Transition States” [*Israel J. Chem.*, **1993**, *33*, 449.](http://dx.doi.org/10.1002/ijch.199300051)  
 (2) [Transition States and Reaction Paths *for* Computational Chemistry Course *by* Prof. Ephraim Eliav](https://www.tau.ac.il/~ephraim/TranState.pdf)  
+(3) E. Chamorro, Y. Prado, M. Duque-Noreña, N. Gutierrez-Sánchez & E. Rincón "Understanding the sequence of the electronic flow along the HCN/CNH isomerization within a bonding evolution theory quantum topological framework" [*Theor. Chem. Acc.* **2019**, *138*, 60](https://doi.org/10.1007/s00214-019-2440-3)  
