@@ -11,7 +11,7 @@ baseurl:          '/dftCourse'
 
 author:
   name:           'Nathan M. Lui'
-#  url:            https://thisisntnathan.github.io
+  url:            https://thisisntnathan.github.io
 
 plugins:
   - jekyll-gist
