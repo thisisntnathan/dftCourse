@@ -31,7 +31,7 @@ The *Short Course* is designed as a primer for advanced undergraduates and begin
 
 ## The Long Course
 
-#### The Long Course is coming soon!
+#### The Long Course is a work in progress!
 
 The *Long Course* is a set of more advanced topics in scripting and computational chemistry. It was written for those who have, or would like to, incorporate more advanced calculations/models into their research. The topics start by streamlining computational workflow (with <kbd>bash</kbd> scripting) and then progress towards the more under-the-hood options of computational engines.  
 
@@ -68,9 +68,9 @@ My least favorite math teacher would always say that the only way to learn calcu
 <!-- Common error codes   -->
 [A collection of papers/resources I've amassed over the years.](/dftCourse/Resources/links.html)
 
-## Contributions
+## Contributions and Corrections
 
-If there's something you'd like to see or add to the course check out the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute)!
+This course is a living, breathing work-in-progress so if you spot any typos or if there are topics you'd like to add (to see added) to the course check out the [GitHub repo](https://github.com/thisisntnathan/dftCourse#so-you-want-to-contribute) or [email me](mailto:nml64@cornell.edu)!  
 
 ## Supplemental Readings
 
