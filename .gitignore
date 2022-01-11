@@ -41,6 +41,7 @@ validation-report.json
 node_modules
 .sass-cache
 .jekyll-cache
+booklet
 
 # Dev stuff
 Makefile
