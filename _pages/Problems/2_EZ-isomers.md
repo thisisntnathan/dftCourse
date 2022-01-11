@@ -19,7 +19,7 @@ Your advisor wants you to compute ground state energies for the two isomers of 3
 
 You take your results back to your advisor who doesn't seem very satisfied. They tell you to make sure the substituents are right by beefing up the basis set on the heteroatoms.  
 
-Modify your calculations to use the triple $\zeta$ basis set `def2tzvp` on all heteroatoms and `def2zvp` on C and H. Give it a shot before checking your input files against those at [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo).  
+Modify your calculations to use the triple $\zeta$ basis set `def2tzvp` on all heteroatoms and `def2svp` on C and H. Give it a shot before checking your input files against those at [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo).  
 
 ### 2) Assigning built-in basis sets to individual atoms
 
