@@ -65,9 +65,12 @@ D    1   1.00
 
 <!-- TODO: Put in key takeaways once energies are done -->
 
-Once your jobs have finished, extract the corrected energies from your results. I've placed mine in the table below if you're just following along (the input/output files are available in [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo)!).  
+Once your jobs have finished, extract the corrected energies from your results. I've placed mine in the table below if you're just following along (the input/output files are available in [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo)).  
 
-There are some key takeaway 
+There are some key takeaway from the data below:
+
+1. The answer never formally changes. In all cases the *E* isomer, as we expect, is more stable than the *Z* isomer.  
+2. The caveat is that depending on our choice of basis set, the relative energies do tend to converge with increasing basis set size. The difference in the expected product distribution of 
 
 | Basis set | Isomer | Energy<br>/ kcal mol<sup>-1</sup> | ΔG(E<->Z)<br>/ kcal mol<sup>-1</sup> | Walltime<br>/ min |
 |:---:|:---:|:---:|:---:|:---:|
@@ -87,4 +90,5 @@ Using these energies can you justify the product distribution observed in the tr
 #### Resources
 
 (1) [Basis Set Exchange](https://www.basissetexchange.org/)  
-(2) Vinyl cations. 12. Mechanism of reaction of cis- and trans-3-phenyl-2-buten-2-yl triflates. Evidence for vinylidene phenonium ions by Peter J. Stang and Thomas E. Dueber [*J. Am. Chem. Soc.* **1977**, *99* (8), 2602](https://pubs.acs.org/doi/abs/10.1021/ja00450a033)
+(2) [Max Hutchinson on CompSci Stack Exchange](https://scicomp.stackexchange.com/questions/5515/how-does-density-functional-theory-scale-with-system-size)  
+(3) Vinyl cations. 12. Mechanism of reaction of cis- and trans-3-phenyl-2-buten-2-yl triflates. Evidence for vinylidene phenonium ions by Peter J. Stang and Thomas E. Dueber [*J. Am. Chem. Soc.* **1977**, *99* (8), 2602](https://pubs.acs.org/doi/abs/10.1021/ja00450a033)
