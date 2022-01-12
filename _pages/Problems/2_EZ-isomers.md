@@ -63,8 +63,6 @@ D    1   1.00
 
 ### Key takeaways
 
-<!-- TODO: Put in key takeaways once energies are done -->
-
 Once your jobs have finished, extract the corrected energies from your results. I've placed mine in the table below if you're just following along (the input/output files are available in [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo)).  
 
 Using these energies can you justify the product distribution observed in the triflation of 3-(*p*-nitro)phenyl-2-butanone (products 5g/6g) in [this paper](https://pubs.acs.org/doi/abs/10.1021/ja00450a033)?<sup>2</sup>  
