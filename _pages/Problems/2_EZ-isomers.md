@@ -15,6 +15,8 @@ Your advisor wants you to compute ground state energies for the two isomers of 3
     <img src="/dftCourse/assets/images/Problems/ez_triflate.svg" width="500" height="120.33">
 </center>
 
+>Do not wait for these calculations to finish. Even running on the cluster, they will take a while. The best thing to do is to submit them and then go set up a reaction or something. If you're running on the `chem` nodes you can expect these jobs to take around 1 to 2 hours.  
+
 ### 1) Specifying different built-in basis sets for different atoms
 
 You take your results back to your advisor who doesn't seem very satisfied. They tell you to make sure the substituents are right by beefing up the basis set on the heteroatoms.  
@@ -33,7 +35,7 @@ Run your computations again, this time use `aug-cc-pvtz` to describe the N and *
 
 ### 3) Incorporating external basis sets into <kbd>Gaussian</kbd> calculations
 
-After a few second guesses, you're unsure of whether or not `aug-cc-pvtz` is really a suitable substitute for `def2tzvpd`; you decide to try using `def2tzvpd` instead. Re-run your calculations, this time use `def2tzvpd` instead of `aug-cc-pvtz` to describe the N and *only the two O of the nitro group*. Keep everything else the same i.e.,  
+After a few second guesses, you're unsure of whether or not `aug-cc-pvtz` is really a suitable substitute for `def2tzvpd`; you also realize that your computations are taking quite a while, and the other group members are starting to get upset that you're hogging the new compute nodes. You decide to try using `def2tzvpd` instead. Re-run your calculations, this time use `def2tzvpd` instead of `aug-cc-pvtz` to describe the N and *only the two O of the nitro group*. Keep everything else the same i.e.,  
 
 - C H: `def2svp`  
 - S F O(trifyl): `def2tzvp`  
@@ -59,10 +61,22 @@ D    1   1.00
       0.14696477366          1.0000000
 ```
 
-<!-- ### Key takeaways -->
+### Key takeaways
 
 <!-- TODO: Put in key takeaways once energies are done -->
-<!-- TODO: Add compute time table here (once job finish)  -->
+
+Once your jobs have finished, extract the corrected energies from your results. I've placed mine in the table below if you're just following along (the input/output files are available in [the code repo](https://github.com/thisisntnathan/dftCourseCodeRepo)!).  
+
+There are some key takeaway 
+
+| Basis set | Isomer | Energy<br>/ kcal mol<sup>-1</sup> | ΔG(E<->Z)<br>/ kcal mol<sup>-1</sup> | Walltime<br>/ min |
+|:---:|:---:|:---:|:---:|:---:|
+| def2svp(all) | *E*<br>*Z* | -973863.597<br>-973862.450 | 1.147 | 37<br>47 |
+| def2tzvp (SNOF)<br>def2svp (CH) | *E*<br>*Z* | -974540.402<br>-974539.491 | 0.911 | 87<br>92 |
+| aug-cc-pvtz (nitro)<br>def2tzvp (trifyl)<br>def2svp (CH) | *E*<br>*Z* | -974540.579<br>-974539.693 | 0.886 | 120<br>134 |
+| def2tzvpd (nitro)<br>def2tzvp (trifyl)<br>def2svp (CH) | *E*<br>*Z* | -974542.096<br>-974541.205 | 0.891 | 99<br>110 |
+
+Using these energies can you justify the product distribution observed in the triflation of 3-(*p*-nitro)phenyl-2-butanone (products 5g/6g) in [this paper](https://pubs.acs.org/doi/abs/10.1021/ja00450a033)?
 
 <br>
 
