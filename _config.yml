@@ -21,4 +21,7 @@ sidebar_home_link:  False
 include:
     - _pages
 
+exclude:
+    - booklet
+
 google_analytics:   297908426
