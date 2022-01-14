@@ -29,11 +29,16 @@ The first line is called the *shebang* (a portmanteau of ha**sh** (#) and **bang
 
 #### Comments
 
-The interpreter doesn't treat this line as a program call since it starts with `#`, the <kbd>bash</kbd> comment symbol. Any text in a <kbd>bash</kbd> script that is preceded with a `#` will be ignored by the interpreter. Note that [different languages have different comment symbols/types](https://en.wikipedia.org/wiki/Comment_(computer_programming)) (e.g. `(* OCaml *)`, `% MATLAB`, `// Java`, `<!-- HTML -->`, etc...). Comments within your code serve two purposes:  
+The interpreter doesn't treat this line as a program call since it starts with `#`, the <kbd>bash</kbd> comment symbol. Any text in a <kbd>bash</kbd> script that is preceded by a `#` will be ignored by the interpreter. Note that [different languages have different comment symbols/types](https://en.wikipedia.org/wiki/Comment_(computer_programming)) (e.g. `(* OCaml *)`, `% MATLAB`, `// Java`, `<!-- HTML -->`, etc...). Comments within your code serve two purposes:  
 <!-- markdownlint-disable-next-line MD032--> 1) when **other people** read your code they understand your thinking and how you chose to implement the program, and  
-<!-- markdownlint-disable-next-line MD032--> 2) when **you** read your code, months or years later, **you** understand your thinking and how you chose to implement the program  
+<!-- markdownlint-disable-next-line MD032--> 2) when **you** read your code, days, months, or years later, **you** understand your thinking and how you chose to implement the program  
 
-> Comment wide and comment often, but don't comment the obvious!
+<center>
+    <img src='/dftCourse/assets/images/SC/doc.png' style='width:50%'>
+    <b>Figure 1.</b> Always document your code. Comment wide and comment often, but don't comment the obvious! <a href='https://victoria.dev/blog/how-to-write-good-documentation/' target='_blank'>Check out this blog post to learn how to document well</a>.<sup>2</sup>
+</center>
+
+<br>
 
 Now back to our script, press `esc` to back out of insert mode and type `:wq` to **w**rite the file and **q**uit <kbd>vim</kbd>.  If you're doing this in a graphical text editor save the file to the home directory with the name `hello.sh`.  
 
@@ -138,7 +143,7 @@ You might be wondering why would ever need to do this. Often times we'll be work
 
 Scripting is useful for more than telling the world your favorite food and how old you are. Its our primary way of sending instructions to the cluster. When we submit jobs to the CHEM cluster's resource manager <kbd>SLURM</kbd> we do so in the form of shell scripts. More on that in the next chapter.
 
-If you want to read more about the power of scripting I wholely recommend Al Sweigart's book [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), a fantastic (and free) resource for budding programmers (and busy grad students).<sup>2</sup>  
+If you want to read more about the power of scripting I wholely recommend Al Sweigart's book [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), a fantastic (and free) resource for budding programmers (and busy grad students).<sup>3</sup>  
 
 <br />
 
@@ -149,4 +154,5 @@ If you want to read more about the power of scripting I wholely recommend Al Swe
 #### References
 
 (1) [Shebang (Unix)](https://en.wikipedia.org/wiki/Shebang_(Unix))  
-(2) [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+(2) [How to write good documentation by Victoria Drake](https://victoria.dev/blog/how-to-write-good-documentation/)  
+(3) [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
