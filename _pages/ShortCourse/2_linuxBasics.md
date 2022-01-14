@@ -94,7 +94,14 @@ To edit or create a file simply type `vim /path/to/file`. If the file already ex
 
 These are the essential, but very basic Unix commands to get you started. There can be quite the learning curve when transitioning from a graphical system to the command line so I'll leave you with two of the most important commands to remember when you're stuck: `man` and `apropos`.  
 
-Say you want to take a peek at the permissions of a certain file, but you can't remember the flag for the detailed output.  The `man ls` command brings up the manual page for `ls`. In it you'll find detailed documentation for the command including its signature, description, options, examples, and related commands. To exit the manual page press `q`. The Linux manual is also available [online](https://linux.die.net/man/).<sup>6</sup>
+Say you want to take a peek at the permissions of a certain file, but you can't remember the flag for the detailed output.  The `man ls` command brings up the manual page for `ls`. In it you'll find detailed documentation for the command including its signature, description, options, examples, and related commands. To exit the manual page press `q`. The Linux manual is also available [online](https://linux.die.net/man/).<sup>6</sup>  
+
+<center>
+    <img src='/dftCourse/assets/images/SC/rtfm.png' style="width:40%">
+      <b>Figure 1.</b> Always read the manual! <a href='https://xkcd.com/293/' target='_blank'>xkcd 293</a>
+</center>
+
+<br>
 
 Now, that's nice if you know what command you need for, but say you want to make a new directory (folder) and you're not sure how. This is where `apropos` comes in.
 
@@ -140,4 +147,5 @@ Go to the next lesson to write your own script!
 (3) [https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm)  
 (4) [<kbd>nano</kbd> documentation](https://www.nano-editor.org/docs.php)  
 (5) [<kbd>nano</kbd> cheat sheet](www.nano-editor.org/dist/latest/cheatsheet.html)  
-(6) [The Linux Manual](https://linux.die.net/man/)
+(6) [The Linux Manual](https://linux.die.net/man/)  
+(7) [xkcd:rtfm](https://xkcd.com/293/)  
