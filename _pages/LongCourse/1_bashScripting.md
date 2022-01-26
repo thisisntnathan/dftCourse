@@ -8,3 +8,6 @@ permalink: /LongCourse/bashScripting.html
 ---
 
 This page is not yet done/started
+
+[relevant xkcd](https://xkcd.com/1319)  
+automation.png  
