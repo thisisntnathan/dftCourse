@@ -8,3 +8,9 @@ permalink: /LongCourse/est.html
 ---
 
 This page has math on it, in $ \LaTeX{} \alpha \beta $.  I wonder if its going to work...
+
+### The Self-Consistent Field (SCF)
+
+1. What is the SCF  
+2. What bonds?  
+3. Other stuff  
